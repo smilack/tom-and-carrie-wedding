@@ -1,0 +1,55 @@
+WEDDING SITE REQUIREMENTS
+High Level:
+	* Introduce guests to both the Bride and Groom
+	* Set the atmosphere of the wedding for guests.
+	* Website uses AngularJS to manage the website application
+	* Website uses Bootstrap for screen responsiveness
+
+Home Page:
+	* Links to Our Story, Our Wedding, Why Madison, Registries, Gallery are clearly labelled
+	* Guests can find the wedding hashtag to use when posting
+
+	#TheSquidandtheSquirrel
+	*HouseCrowlack
+	#TomandCarrie2018
+	#TarrieisCanon
+	#AstheCrowFlies
+
+Our Story: 
+	* Guests can learn:
+		* How the bride and groom met
+		* Key milestones in the bride and groom's relationship
+
+Our Wedding:
+	* Guests can reference date and time of wedding
+	* Guests can reference wedding location
+	* Guests can find hotel block information
+	* Guests can see a map of the area
+	* Day of schedule
+
+Why Madison:
+	* Guests can learn more about local points of interest
+	* Guests can find hotel block information
+	* Guests can see a map of the area
+
+Registries:
+	* Guests can find stores we are registered in
+	* Links to registries at Williams-Sonoma, Bed Bath and Beyond, and Amazon
+
+Gallery:
+	* Guests can view pictures of the bride and groom
+	* Guests can view pictures of the Crowlack cats
+
+Nice to Have:
+	* Guests can click a button and see different portmanteau's with a portmanteau generator
+	* Guests can sign an online Guest Book
+	* Randomized proposal story
+	* Guests can see honeymoon information
+	* Guests can review their proposal story
+	* Our Wedding information is hidden from users other than guests
+	* Map of the Farmer's Market
+	* Map of the recommended points of interest
+
+Out of Scope:
+	* Guests can purchase registry items on the site
+	* Guests can RSVP on the site
