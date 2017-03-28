@@ -32,7 +32,7 @@ app.directive('homePage', function(){
 app.directive('ourStory', function(){
 	return {
 		restrict: 'E',
-		templateUrl: '.html'
+		templateUrl: 'our-story.html'
 	};
 });
 
