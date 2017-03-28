@@ -4,33 +4,13 @@ body {
 
 /*Heading code */
 header {
+	text-align: center;
+	color: White;
 	/*Gradient from uigradients.com*/
 	background: #f85032; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #f85032 , #e73827); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #f85032 , #e73827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-	header h1 {
-		color: White;
-		font-family: 'Raleway', sans-serif;
-		font-weight: bolder;
-		font-size: 75px;
-		text-align: center;
-	}
-
-	header h2 {
-		font-family: 'Architects Daughter', cursive;
-		color: white;
-		font-size:40px;
-		text-align: center;
-	}
-
-	header h3 {
-		font-family: 'Amatic SC', cursive;
-		color: white;
-		font-size:40px;
-		text-align: center;
-	}
 
 /* Navigation bar */
 nav {
@@ -51,7 +31,26 @@ nav {
 	border-radius: 75px;
 }
 
+/*Body Typography*/
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	font-size: 75px;
+	}
 
+h2 {
+	font-family: 'Architects Daughter', cursive;
+	font-size:40px;
+}
+
+h3 {
+	font-family: 'Amatic SC', cursive;
+	font-size:40px;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
 
 /* font families:
 font-family: 'Amatic SC', cursive;
