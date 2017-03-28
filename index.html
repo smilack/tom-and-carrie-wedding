@@ -11,11 +11,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
 		<script type = "text/javascript" src="app.js"></script>
 	</head> 
-
 	<body>
 		<div ng-controller="PageController as page">
-
-			<!--Create separate header.html file -->
+			<!--Site navigation bar -->
 			<nav class= "navbar navbar-fixed-top">
 				<div class="container-fluid">
 					<div>
@@ -43,13 +41,12 @@
 					</div>
 				</div>
 			</nav>
-			<div class="container-fluid">
+			<!--<div class="container-fluid">
 				<div class="jumbotron">
 					<h1>Tom and Carrie's Wedding</h1>
 					<h2>#HouseCrowlack</h2>
 				</div>
-			</div>
-			<!--End header.html file -->
+			</div>-->
 
 			<div class="container">
 				<home-page ng-show="page.isSet(1)"></home-page>
