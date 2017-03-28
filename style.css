@@ -41,7 +41,7 @@ nav {
 
 /*Home page */
 .home-image {
-	position: absolute;
+	border-radius: 75px;
 }
 
 
