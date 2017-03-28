@@ -20,10 +20,47 @@ app.controller('PageController', function(){
 	};
 });
 
+
+//Application page directives
 app.directive('homePage', function(){
 	return {
 		restrict: 'E',
 		templateUrl: 'home-page.html'
+	};
+});
+
+app.directive('ourStory', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'our-story.html'
+	};
+});
+
+app.directive('ourWedding', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'our-wedding.html'
+	};
+});
+
+app.directive('everythingMadison', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'everything-madison.html'
+	};
+});
+
+app.directive('ourRegistries', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'our-registries.html'
+	};
+});
+
+app.directive('galleryPage', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'gallery-page.html'
 	};
 });
 
