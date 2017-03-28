@@ -3,7 +3,6 @@ body {
 }
 
 /*Heading code */
-
 header {
 	/*Gradient from uigradients.com*/
 	background: #f85032; /* fallback for old browsers */
@@ -13,12 +12,20 @@ header {
 
 	header h1 {
 		color: White;
-		font-family: 'Archivo Black', sans-serif;
+		font-family: 'Raleway', sans-serif;
+		font-weight: bolder;
 		font-size: 75px;
 		text-align: center;
 	}
 
 	header h2 {
+		font-family: 'Architects Daughter', cursive;
+		color: white;
+		font-size:40px;
+		text-align: center;
+	}
+
+	header h3 {
 		font-family: 'Amatic SC', cursive;
 		color: white;
 		font-size:40px;
