@@ -59,10 +59,12 @@ p {
 }
 /* Everything Madison */
 
-li[ng-repeat]
+li[ng-repeat] {
+	list-style: none;
+}
 
 .activy p {
-	list-style: unstyled;
+	text-align: center;
 }
 
 /*Registry page */
