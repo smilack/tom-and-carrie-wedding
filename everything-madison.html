@@ -13,6 +13,7 @@
 			</p>
 		</div>
 	</div>
+	<!--Original set-up - break glass in case of Angular difficulties
 	<div class="row">
 		<div class="col-md-offset-2 col-md-9">
 			<ul class = "list-group">
@@ -27,7 +28,7 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	<div class="row" ng-repeat="activity in actCtrl.list">
 		<div class="col-md-offset-2 col-md-1">
 			<h2>{{activity.category}}</h2>
@@ -35,8 +36,11 @@
 		<div class="col-md-7">
 			<ul>
 				<li ng-repeat="field in activity.items">
-					<h3>{{field.name}}</h3> <br>
-					<p>{{field.description}} - 				{{field.link}}</p>
+					<div class="activity">
+						<h3><a ng-href="{{field.link}}">{{field.name}}</a></h3><br>
+						<p>{{field.description}}</p><br>
+						<a ng-href={{field.map}}>Map</a>
+					</div>
 				</li>
 			</ul>
 		</div>

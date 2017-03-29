@@ -57,6 +57,15 @@ nav {
 p {
 	font-family: 'Raleway', sans-serif;
 }
+/* Everything Madison */
+
+li[ng-repeat]
+
+.activy p {
+	list-style: unstyled;
+}
+
+/*Registry page */
 
 .registry {
 	border-radius: 10px;
