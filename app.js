@@ -20,12 +20,6 @@ app.controller('PageController', function(){
 	};
 });
 
-//Controller manages viewing array of Madison activities
-app.controller('ActivityController', function(){
-	this.list = madison;
-	
-});
-
 //Application page directives
 	app.directive('homePage', function(){
 		return {
@@ -68,6 +62,12 @@ app.controller('ActivityController', function(){
 			templateUrl: 'gallery-page.html'
 		};
 	});
+
+//Controller manages viewing array of Madison activities
+app.controller('ActivityController', function(){
+	this.list = madison;
+	
+});
 
 //Array of Madison activities for everything-madison.html
 var madison = [{

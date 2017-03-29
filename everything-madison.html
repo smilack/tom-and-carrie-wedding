@@ -13,7 +13,13 @@
 			</p>
 			<ul class = "list-group">
 				<li class="list-group-item" ng-repeat="activity in actCtrl.list">
-					{{activity.category}} - {{activity.items.name}}, {{activity.items.description}}
+					{{activity.category}}
+					<ul>
+						<li ng-repeat="field in activity.items">
+							<h3>{{field.name}}<h3>
+							<p>{{field.description}} - 				{{field.link}}</p>
+						</li>
+					</ul>
 				</li>
 		</div>
 		<!--<div class="col-md-7">
