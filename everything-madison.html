@@ -11,20 +11,33 @@
 			<p>
 				Explore all of the amazing things that keep us living in Madison!
 			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-offset-2 col-md-9">
 			<ul class = "list-group">
 				<li class="list-group-item" ng-repeat="activity in actCtrl.list">
 					{{activity.category}}
 					<ul>
 						<li ng-repeat="field in activity.items">
-							<h3>{{field.name}}<h3>
+							<h3>{{field.name}}</h3>
 							<p>{{field.description}} - 				{{field.link}}</p>
 						</li>
 					</ul>
 				</li>
+			</ul>
 		</div>
-		<!--<div class="col-md-7">
-			<div class="activity">
-			</div>
-		</div>-->
 	</div>
+	<div class="row" ng-repeat="activity in actCtrl.list">
+		<div class="col-md-offset-2 col-md-1">
+			<h2>{{activity.category}}</h2>
+		</div>
+		<div class="col-md-7">
+			<ul>
+				<li ng-repeat="field in activity.items">
+					<h3>{{field.name}}</h3> <br>
+					<p>{{field.description}} - 				{{field.link}}</p>
+				</li>
+			</ul>
+		</div>
 </section>
