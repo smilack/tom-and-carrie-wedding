@@ -52,7 +52,30 @@ nav {
 	border-radius: 75px;
 }
 
+/*Page body */
+p {
+	font-family: 'Raleway', sans-serif;
+}
 
+.registry {
+	border-radius: 25px;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+	.williams-sonoma {
+		color: white;
+		background-color: #2d2d2d;
+	}
+
+	.bed-bath-beyond {
+		color: white;
+		background-color: #3a1153;
+	}
+
+	.amazon {
+		color: #fba61c;
+		background-color:#232f3e;
+	}
 
 /* font families:
 font-family: 'Amatic SC', cursive;
