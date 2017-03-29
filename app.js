@@ -20,48 +20,86 @@ app.controller('PageController', function(){
 	};
 });
 
+//Controller manages viewing array of Madison activities
+app.controller('ActivityController', function(){
+	this.list = madison;
+	
+});
 
 //Application page directives
-app.directive('homePage', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'home-page.html'
-	};
-});
+	app.directive('homePage', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'home-page.html'
+		};
+	});
 
-app.directive('ourStory', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'our-story.html'
-	};
-});
+	app.directive('ourStory', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'our-story.html'
+		};
+	});
 
-app.directive('ourWedding', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'our-wedding.html'
-	};
-});
+	app.directive('ourWedding', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'our-wedding.html'
+		};
+	});
 
-app.directive('everythingMadison', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'everything-madison.html'
-	};
-});
+	app.directive('everythingMadison', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'everything-madison.html'
+		};
+	});
 
-app.directive('ourRegistries', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'our-registries.html'
-	};
-});
+	app.directive('ourRegistries', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'our-registries.html'
+		};
+	});
 
-app.directive('galleryPage', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'gallery-page.html'
-	};
-});
+	app.directive('galleryPage', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'gallery-page.html'
+		};
+	});
+
+//Array of Madison activities for everything-madison.html
+var madison = [{
+	category: 'Food',
+	items: [{
+		name: 'Old Fashioned',
+		description: 'Best cheese curds in Madison',
+		link: '#',
+		picture: "images.jpg",
+		map: '#'
+	}, {
+		name: 'Great Dane',
+		description: 'Terrific Poutine',
+		link: '#',
+		picture: "images.jpg",
+		map: '#'
+	}]
+}, {
+	category: 'Fun',
+	items: [{
+		name: 'Farmers Market',
+		description: 'The main event in Downtown Madison',
+		link: '#',
+		picture: "images.jpg",
+		map: '#'
+	}, {
+		name: 'Capital tour',
+		description: 'Hands down best use of badgers',
+		link: '#',
+		picture: "images.jpg",
+		map: '#'
+	}]
+}];
 
 })();
