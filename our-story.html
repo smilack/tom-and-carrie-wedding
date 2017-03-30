@@ -7,18 +7,15 @@
 		</header>
 	</div>
 	<div class="row">
-      <div id="timeline-container" ng-controller="TimelineController as timeline">
+      <div id="timeline-container" class="col-md-offset-2 col-md-8" ng-controller="TimelineController as timeline">
         <div id="timeline" style="height: {{ timeline.height }}px"></div>
-        <div class="line" ng-repeat-start="event in timeline.events" style="top: {{ event.position }}px"></div>
-        <div class="dot" ng-repeat-end style="top: {{ event.position }}px"></div>
+        <div style="top: {{ event.position }}px; width: {{ event.lineLength }}px;" class="line" ng-repeat-start="event in timeline.events"></div>
+        <div style="top: {{ event.position }}px" class="dot"></div>
+        <div style="top: {{ event.position }}px" class="date">{{ event.readableDate }}</div>
+        <div style="top: {{ event.position }}px; left: calc(25% + {{ event.lineLength }}px);" class="event" ng-repeat-end>
+          <div class="title">{{ event.title }}</div>
+          <div class="description">{{ event.description }}</div>
+        </div>
       </div>
-		<div class="col-md-offset-2 col-md-8" ng-controller="TimelineController as timeline">
-			<dl>
-          <dt ng-repeat-start="event in timeline.events">{{ event.title }}</dt>
-          <dd>{{ event.description }}</dd>
-          <dd>{{ event.readableDate }}</dd>
-          <dd ng-repeat-end>{{ event.position }}</dd>
-			</dl>
-		</div>
 	</div>
 </section>
