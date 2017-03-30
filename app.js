@@ -123,7 +123,7 @@ app.controller('GalleryController', function(){
 
 //Array of Photos for gallery-page.html
 var gallery = [{
-	image: 'gallery/tarrie-12-13.jpg',
+	image: 'gallery/Tarrie-12-13.jpg',
 	date: 'December 2013',
 	location: 'Chicago Kristkindlemarkt',
 	description: 'We visited the popular German Christmas market in downtown Chicago'
