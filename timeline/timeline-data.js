@@ -1,7 +1,7 @@
 var Months = Object.freeze({ JAN: 0, FEB: 1, MAR: 2, APR: 3, MAY: 4, JUN: 5, JUL: 6, AUG: 7, SEP: 8, OCT: 9, NOV: 10, DEC: 11 });
 
 var timelineData = {
-   height: 2000, //px
+   height: 2500, //px
    events: [
       {
          title: "Moved in Together",
@@ -62,8 +62,8 @@ var timelineData = {
       {
          title: "Road Trip",
          description: "Tom and Carrie spent three weeks on the road when they were homeless",
-         date: new Date(2014, Months.AUG),
-         day: false,
+         date: new Date(2014, Months.JUL, 31),
+         day: true,
          photo: ""
       },
       {
@@ -93,6 +93,13 @@ var timelineData = {
          date: new Date(2018, Months.JUN),
          day: false,
          photo: ""
+      },
+      {
+         title: "Today",
+         description: "",
+         date: new Date(),
+         day: true,
+         photo: "",
       }
    ]
 };
