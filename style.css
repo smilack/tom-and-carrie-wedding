@@ -106,6 +106,12 @@ li[ng-repeat] {
 			font-family: 'Archivo Black', sans-serif;
 		}
 
+/*Gallery page */
+.gallery-image {
+	text-align: center;
+	display: inline-block;
+}
+
 /* font families:
 font-family: 'Amatic SC', cursive;
 font-family: 'Architects Daughter', cursive;
