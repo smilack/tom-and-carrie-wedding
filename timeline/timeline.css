@@ -26,6 +26,7 @@
 }
 
 .line {
+   z-index: 0;
    height: 3px;
    left: 25%;
    background-color: black;
@@ -40,9 +41,11 @@
 }
 
 .event {
-   left: calc(25% + 200px);
+   z-index: 1;
+   width: 30%;
    padding: 0 1em;
    transform: translateY(-17px);
+   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.8) 1em, rgba(255,255,255,0.8) calc(100% - 2em), rgba(255,255,255,0));
 }
 
    .event .title {

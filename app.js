@@ -4,7 +4,7 @@
 var app = angular.module('app', []);
 
 //Controller manages pages user views when clicking tabs
-app.controller('PageController', function(){
+app.controller('PageController', ['$scope', '$window', '$timeout', function($scope, $window, $timeout){
 
 	//Sets a default page (home)
 	this.page = 1;
@@ -18,7 +18,13 @@ app.controller('PageController', function(){
 	this.setPage = function(setPage) {
 		this.page = setPage;
 	};
-});
+
+   $scope.$watch('this.page', function(newVal, oldVal) {
+      if(newVal.page == 2) {
+         $timeout(function() { angular.element($window).triggerHandler('resize'); }, 0);
+      }
+   }, true);
+}]);
 
 
 //Application page directives
