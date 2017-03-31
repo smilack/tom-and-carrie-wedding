@@ -1,0 +1,71 @@
+Outstanding Work:
+
+Information:
+	Our Wedding:
+	* Travel Information
+	* Venue information
+	* Embedded map
+
+	Gallery:
+	* Pictures
+
+Functionality:
+	Overall:
+	* Tab fade between pages
+	* Links pop into new tab
+	* Have tabs respond like links (md-nav-bar) 
+		https://material.angularjs.org/latest/demo/navBar
+
+	Our Story:
+	* Timeline
+
+	Our Wedding:
+	* Determine how to keep information private
+
+	Everything Madison:
+	* Toggle Madison activities visibility
+
+	Gallery:
+	* Gallery pop up
+	* Gallery ordering
+	* Gallery sorting
+
+Refactoring:
+	* Separate madison array into data file
+	* Separate gallery array into separate data file
+	* Break out Angular into separate files
+	* Optimize CSS
+
+Design:
+	Overall:
+	* Active tabs match header/body background
+	* Finalize header style
+	* Determine body style
+	* Finalize body width
+
+	Our Story:
+	* Design boxes with Milestones
+	* Place pictures on page
+
+	Everything Madison:
+	* Design intro section
+	* Refine table of activities
+
+	Our Registries:
+	* Clean up buttons for registries
+
+	Gallery:
+	* Design how picture pop-out appears
+	* Design how thumbnails appear
+
+Content:
+	Our Story: 
+	* Relationship milestones
+
+	Gallery:
+	* Pictures
+
+	Everything Madison:
+	* Pictures of Madison
+	* Complete list of recommendations
+
