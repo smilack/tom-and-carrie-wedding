@@ -12,44 +12,37 @@
 		<script type = "text/javascript" src="app.js"></script>
 	</head> 
 	<body>
-		<div ng-controller="PageController as page">
+		<div class="container-fluid" ng-controller="PageController as page">
 			<!--Site navigation bar -->
 			<nav class= "navbar navbar-fixed-top">
-				<div class="container-fluid">
-					<div>
-						<ul class="nav nav-tabs nav-justified">
-							<!--PageController functions to set page to active-->
-							<li ng-class="{ active:page.isSet(1) }">
-								<a href ng-click="page.setPage(1)">Home</a>
-							</li>
-							<li ng-class="{ active:page.isSet(2) }">
-								<a href ng-click="page.setPage(2)">Our Story</a>
-							</li>
-							<li ng-class="{ active:page.isSet(3) }">
-								<a href ng-click="page.setPage(3)">Our Wedding</a>
-							</li>
-							<li ng-class="{ active:page.isSet(4) }">
-								<a href ng-click="page.setPage(4)">Everything Madison</a>
-							</li>
-							<li ng-class="{ active:page.isSet(5) }">
-								<a href ng-click="page.setPage(5)">Our Registries</a>
-							</li>
-							<li ng-class="{ active:page.isSet(6) }">
-								<a href ng-click="page.setPage(6)">Gallery</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ul class="nav nav-tabs nav-justified">
+					<!--PageController functions to set page to active-->
+					<li ng-class="{ active:page.isSet(1) }">
+						<a href ng-click="page.setPage(1)">Home</a>
+					</li>
+					<li ng-class="{ active:page.isSet(2) }">
+						<a href ng-click="page.setPage(2)">Our Story</a>
+					</li>
+					<li ng-class="{ active:page.isSet(3) }">
+						<a href ng-click="page.setPage(3)">Our Wedding</a>
+					</li>
+					<li ng-class="{ active:page.isSet(4) }">
+						<a href ng-click="page.setPage(4)">Everything Madison</a>
+					</li>
+					<li ng-class="{ active:page.isSet(5) }">
+						<a href ng-click="page.setPage(5)">Our Registries</a>
+					</li>
+					<li ng-class="{ active:page.isSet(6) }">
+						<a href ng-click="page.setPage(6)">Gallery</a>
+					</li>
+				</ul>
 			</nav>
-
-			<div class="container-fluid">
-				<home-page ng-show="page.isSet(1)"></home-page>
-				<our-story ng-show="page.isSet(2)"></our-story>
-				<our-wedding ng-show="page.isSet(3)"></our-wedding>
-				<everything-madison ng-show="page.isSet(4)"></everything-madison>
-				<our-registries ng-show="page.isSet(5)"></our-registries>
-				<gallery-page ng-show="page.isSet(6)"></gallery-page>
-			</div>
+			<home-page ng-show="page.isSet(1)"></home-page>
+			<our-story ng-show="page.isSet(2)"></our-story>
+			<our-wedding ng-show="page.isSet(3)"></our-wedding>
+			<everything-madison ng-show="page.isSet(4)"></everything-madison>
+			<our-registries ng-show="page.isSet(5)"></our-registries>
+			<gallery-page ng-show="page.isSet(6)"></gallery-page>
 		</div>
 	</body>
 </html>

@@ -51,9 +51,6 @@ Design:
 	* Design intro section
 	* Refine table of activities
 
-	Our Registries:
-	* Clean up buttons for registries
-
 	Gallery:
 	* Design how picture pop-out appears
 	* Design how thumbnails appear
