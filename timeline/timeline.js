@@ -33,7 +33,7 @@ function parseEvent(event) {
    var positionFraction = (event.date - this.firstDate) / this.dateDistance;
    event.position = Math.round(this.height * positionFraction);
 
-   event.lineLength = 100;
+   event.lineLength = 5;
 }
 
 var Months = Object.freeze([ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]);
