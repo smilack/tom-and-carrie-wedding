@@ -1,0 +1,59 @@
+#timeline-container {
+   position: relative;
+}
+
+#timeline {
+   position: absolute;
+   left: 25%;
+   transform: translateX(-50%);
+   width: 5px;
+   background-color: black;
+} 
+
+.dot, .line, .date, .event {
+   position: absolute;
+   transform: translateY(-50%);
+}
+
+.dot {
+   width: 15px;
+   height: 15px;
+   left: 25%;
+   transform: translate(-50%, -50%);
+   border: 3px black solid;
+   border-radius: 100%;
+   background-color: white;
+}
+
+.line {
+   z-index: 0;
+   height: 3px;
+   left: 25%;
+   background-color: black;
+}
+
+.date {
+   right: 75%;
+   font-family: 'Architects Daughter', cursive;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 1em;
+}
+
+.event {
+   z-index: 1;
+   max-width: 30%;
+   padding: 0 1em;
+   transform: translateY(-17px);
+   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.8) 1em, rgba(255,255,255,0.8) calc(100% - 2em), rgba(255,255,255,0));
+}
+
+   .event .title {
+      font-weight: bold;
+      font-size: 24px;
+      font-family: 'Amatic SC', cursive;
+   }
+
+   .event .description {
+      font-size: 16px;
+   }
