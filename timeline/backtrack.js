@@ -25,9 +25,10 @@ app.directive('resize', ['$window', function($window) {
 }]);
 
 var TimelineBacktrack = {
-   run() {
+   run(animate = false) {
       var timelineContainer = document.querySelector("#timeline-container"),
           eventElements = Array.from(timelineContainer.querySelectorAll(".event")),
+          lineElements = Array.from(timelineContainer.querySelectorAll(".line")),
 
           timeline = angular.element(timelineContainer),
           scope = timeline.scope(),
@@ -35,11 +36,8 @@ var TimelineBacktrack = {
           controller = timeline.controller(),
           allEvents = controller.events;
       
-      this.setUpEvents(allEvents);
-      this.arrangeEvents(allEvents, eventElements, scope);
-      this.saveResults(allEvents);
-
-      scope.$digest();
+      this.resetEvents(allEvents, scope);
+      this.arrangeEvents(allEvents, eventElements, lineElements, scope, animate);
    },
 
    check() {
@@ -49,42 +47,56 @@ var TimelineBacktrack = {
       return this.isOk(eventElements);
    },
 
-   setUpEvents(events) {
-      events.forEach(event => { event.hPos = 5; });
+   resetEvents(events, scope) {
+      events.forEach(event => { event.lineLength = 5; });
+      scope.$digest();
    },
 
-   saveResults(events) {
-      events.forEach(event => { event.lineLength = event.hPos });
-   },
+   async arrangeEvents(allEvents, eventElements, lineElements, scope, animate) {
+      var i = 0,
+          iterations = 0,
+          MAX_ITERS = allEvents.length * allEvents.length * (70 - 5) / 5;
 
-   arrangeEvents(allEvents, eventElements, scope) {
-      var i = 0;
-      while(i < allEvents.length) {
+      while(i >= 0 && i < allEvents.length && iterations < MAX_ITERS) {
+         iterations++;
+
          let theseEvents = allEvents.slice(0, i + 1),
-             event = theseEvents[theseEvents.length - 1],
-             theseEventElements = eventElements.slice(0, i + 1);
+             event = theseEvents[theseEvents.length - 1];
 
-         event.hPos -= 5;
-         
-         do {
-            event.hPos += 5;
-            this.saveResults(theseEvents);
+         let theseEventElements = eventElements.slice(0, i + 1),
+             theseLineElements = lineElements.slice(0, i + 1),
+             elements = this.interleave(theseEventElements, theseLineElements);
+
+         while(event.lineLength <= 70 && !this.isOk(elements)) {
+            event.lineLength += 5;
             scope.$digest();
 
-         } while(event.hPos <= 70 && !this.isOk(theseEventElements));
+            if(animate) {
+               await this.sleep(10);
+            }
+         }
 
-         if(event.hPos > 70) {
-            event.hPos = 5;
+         if(event.lineLength > 70) {
+            event.lineLength = 5;
             i--;
+            allEvents[i].lineLength += 5;
+
+            scope.$digest();
          } else {
             i++;
          }
+      }
+
+      if(i < 0 || iterations > MAX_ITERS) {
+         this.resetEvents(allEvents, scope);
       }
    },
 
    isOk(elements) {
       var allRects = elements.map(element => element.getBoundingClientRect());
-      return this.totalOverlap(allRects) < 1;
+      var totalOverlap = this.totalOverlap(allRects);
+
+      return  totalOverlap < 100;
    },
 
    totalOverlap(allRects) {
@@ -109,6 +121,18 @@ var TimelineBacktrack = {
           height = Math.max(0, y2 - y1);
 
       return width * height;
+   },
+
+   interleave(arr1, arr2) {
+      return arr1.reduce(function(memo, element, index) {
+                memo.push(element);
+                memo.push(arr2[index]);
+                return memo;
+             }, []);
+   },
+
+   sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
    }
 };
 
