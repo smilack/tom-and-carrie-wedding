@@ -7,15 +7,16 @@
 		</header>
 	</div>
 	<div class="row">
-		<div class="col-md-offset-2 col-md-8">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
+      <resize></resize>
+      <div id="timeline-container" class="col-md-offset-2 col-md-8" ng-controller="TimelineController as timeline">
+        <div id="timeline" style="height: {{ timeline.height }}px"></div>
+        <div style="top: {{ event.position }}px; width: {{ event.lineLength }}%;" class="line" ng-repeat-start="event in timeline.events"></div>
+        <div style="top: {{ event.position }}px" class="dot"></div>
+        <div style="top: {{ event.position }}px" class="date">{{ event.readableDate }}</div>
+        <div style="top: {{ event.position }}px; left: calc(25% + {{ event.lineLength }}%)" class="event" ng-repeat-end>
+          <div class="title">{{ event.title }}</div>
+          <div class="description">{{ event.description }}</div>
+        </div>
+      </div>
 	</div>
 </section>
