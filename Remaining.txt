@@ -2,9 +2,11 @@ Outstanding Work:
 
 Information:
 	Our Wedding:
-	* Travel Information
 	* Venue information
 	* Embedded map
+
+	Travel Logistics
+	* Travel Information
 
 	Gallery:
 	* Pictures
@@ -21,6 +23,9 @@ Functionality:
 
 	Our Wedding:
 	* Determine how to keep information private
+
+	Travel Logistics:
+	* Hyperlinks to hotels and airports
 
 	Everything Madison:
 	* Toggle Madison activities visibility
