@@ -6,20 +6,23 @@ High Level:
 	* Website uses Bootstrap for screen responsiveness
 
 Home Page:
-	** Links to Our Story, Our Wedding, Why Madison, Registries, Gallery are clearly labelled
+	** Links to Our Story, Our Wedding, Travel Logistics, Why Madison, Registries, Gallery are clearly labelled
 	** Guests can find the wedding hashtag to use when posting
 
 Our Story: 
 	* Guests can learn:
-		* How the bride and groom met
-		* Key milestones in the bride and groom's relationship
+		** How the bride and groom met
+		** Key milestones in the bride and groom's relationship
 
 Our Wedding:
 	* Guests can reference date and time of wedding
 	* Guests can reference wedding location
+	* Day of schedule
+
+Travel Logistics:
 	* Guests can find hotel block information
 	* Guests can see a map of the area
-	* Day of schedule
+	* Guests can review airport options
 
 Why Madison:
 	* Guests can learn more about local points of interest
@@ -31,7 +34,7 @@ Registries:
 	** Links to registries at Williams-Sonoma, Bed Bath and Beyond, and Amazon
 
 Gallery:
-	* Guests can view pictures of the bride and groom
+	** Guests can view pictures of the bride and groom
 	* Guests can view pictures of the Crowlack cats
 
 Nice to Have:
