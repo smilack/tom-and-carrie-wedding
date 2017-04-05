@@ -48,10 +48,18 @@ app.controller('PageController', ['$scope', '$window', '$timeout', function($sco
 		};
 	});
 
-	app.directive('everythingMadison', function(){
+
+	app.directive('travelLogistics', function(){
 		return {
 			restrict: 'E',
-			templateUrl: 'everything-madison.html'
+			templateUrl: 'travel-logistics.html'
+		};
+	});
+
+	app.directive('whyMadison', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'why-madison.html'
 		};
 	});
 
