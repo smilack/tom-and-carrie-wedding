@@ -18,12 +18,12 @@
 	     <script type="text/javascript" src="javascript/backtrack.js"></script>
 	</head> 
 	<body>
-		<div class="container-fluid" ng-controller="PageController as page">
+		<div class="container-fluid">
 			<!--Site navigation bar -->
 			<nav class= "navbar navbar-fixed-top">
 				<!--
-				<ul class="nav nav-tabs nav-justified">
-					<!--PageController functions to set page to active
+				<ul class="nav nav-tabs nav-justified" ng-controller="PageController as page">
+					PageController functions to set page to active
 					<li ng-class="{ active:page.isSet(1) }">
 						<a href ng-click="page.setPage(1)">Home</a>
 					</li>
