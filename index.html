@@ -10,6 +10,7 @@
 		<!--Angular CDN-->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
 		<!--Javascripts-->
 		<script type ="text/javascript" src="javascript/app.js"></script>
 	     <script type="text/javascript" src="javascript/data.js"></script>
@@ -20,8 +21,9 @@
 		<div class="container-fluid" ng-controller="PageController as page">
 			<!--Site navigation bar -->
 			<nav class= "navbar navbar-fixed-top">
+				<!--
 				<ul class="nav nav-tabs nav-justified">
-					<!--PageController functions to set page to active-->
+					<!--PageController functions to set page to active
 					<li ng-class="{ active:page.isSet(1) }">
 						<a href ng-click="page.setPage(1)">Home</a>
 					</li>
@@ -44,7 +46,33 @@
 						<a href ng-click="page.setPage(7)">Gallery</a>
 					</li>
 				</ul>
+				-->
+				<ul class="nav nav-tabs nav-justified">
+					<!--PageController functions to set page to active-->
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/our-story">Our Story</a>
+					</li>
+					<li>
+						<a href="/our-wedding">Our Wedding</a>
+					</li>
+					<li>
+						<a href="/travel-logistics">Travel Logistics</a>
+					</li>
+					<li>
+						<a href="/why-madison">Why Madison</a>
+					</li>
+					<li>
+						<a href="/our-registries">Our Registries</a>
+					</li>
+					<li>
+						<a href="/gallery">Gallery</a>
+					</li>
+				</ul>
 			</nav>
+			<div ng-view></div>
 			<home-page ng-show="page.isSet(1)"></home-page>
 			<our-story ng-show="page.isSet(2)"></our-story>
 			<our-wedding ng-show="page.isSet(3)"></our-wedding>

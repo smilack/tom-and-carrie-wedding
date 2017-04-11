@@ -1,8 +1,33 @@
 (function() {
 
 //Declare module for website application 
-var app = angular.module('app', []);
-
+var app = angular.module('app', ['ngRoute'])
+.config(function($routeProvider) {
+	$routeProvider
+		.when('/', {
+			templateUrl: 'templates/home-page.html'
+		})
+		.when('/our-story', {
+			templateUrl: 'templates/our-story.html'
+		})
+		.when('/our-wedding', {
+			templateUrl: 'templates/our-wedding.html'
+		})
+		.when('/travel-logistics', {
+			templateUrl: 'templates/travel-logistics.html'
+		})
+		.when('/why-madison', {
+			templateUrl: 'templates/why-madison.html'
+		})
+		.when('/our-registries', {
+			templateUrl: 'templates/our-registries.html'
+		})
+		.when('/gallery', {
+			templateUrl: 'templates/gallery-page.html'
+		})
+		.otherwise({ redirectTo: '/' });
+});
+/*
 //Controller manages pages user views when clicking tabs
 app.controller('PageController', ['$scope', '$window', '$timeout', function($scope, $window, $timeout){
 
@@ -76,6 +101,7 @@ app.controller('PageController', ['$scope', '$window', '$timeout', function($sco
 			templateUrl: 'templates/gallery-page.html'
 		};
 	});
+	*/
 
 //Controller manages viewing array of Madison activities
 app.controller('ActivityController', function(){
