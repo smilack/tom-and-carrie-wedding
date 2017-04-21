@@ -102,13 +102,13 @@ nav {
 	}
 
 	.home h1 {
-		color: rgb(178, 18, 18);
+		color: #1e5799;
 	    font-size: 75px;
 	}
 
 	.home h2, .home h3 {
 		font-size: 50px;
-		color: rgb(255, 10, 0);
+		color: rgb(178, 18, 18);
 	}
 
 .address {
