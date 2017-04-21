@@ -12,6 +12,7 @@ body {
 	background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 /*Heading code */
@@ -84,7 +85,6 @@ nav {
 	background-size: 110px 110px;
 	background-color: rgb(178, 18, 18);
 	background-position: 0 0, 55px 55px;
-	background-attachment: fixed;
 }
 
 	.home header {
