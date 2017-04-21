@@ -1,7 +1,3 @@
-html {
-
-}
-
 body {
 	padding-top: 50px; /* Aligns with navbar */
 
@@ -23,6 +19,7 @@ body {
 header {
 	text-align: center;
 	color: White;
+	padding-top: 50px; /* Aligns with navbar */
 }
 	
 	/*Heading Typography*/
@@ -76,7 +73,7 @@ nav {
 
 /*Home page */
 .home-image {
-	border-radius: 75px;
+	border-radius: 10px;
 }
 
 /* Everything Madison */
