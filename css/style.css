@@ -84,6 +84,7 @@ nav {
 	background-size: 110px 110px;
 	background-color: rgb(178, 18, 18);
 	background-position: 0 0, 55px 55px;
+	background-attachment: fixed;
 }
 
 	.home header {
@@ -91,23 +92,22 @@ nav {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 10px;
 		padding: 20px;
+		margin-top: 120px;
 	}
 
 	.home img {
 		padding: 0px;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		margin: 10px 0px 15px 0px;
 	}
 
 	.home h1 {
 		color: rgb(178, 18, 18);
-	    font-size: 100px;
-	    margin: 75px 0px 0px 0px;
+	    font-size: 75px;
 	}
 
 	.home h2, .home h3 {
-		font-size: 75px;
+		font-size: 50px;
 		color: rgb(255, 10, 0);
 	}
 
