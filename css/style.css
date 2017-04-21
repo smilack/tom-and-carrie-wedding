@@ -99,6 +99,17 @@ nav {
 		color: rgb(244, 255, 25);
 	}
 
+.address {
+	text-align: center;
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	font-size: 17.5px;
+}
+
+.subsection {
+	margin-top: 20px;
+}
+
 /* Everything Madison */
 
 li[ng-repeat] {
