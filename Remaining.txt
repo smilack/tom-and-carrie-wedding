@@ -1,10 +1,6 @@
 Outstanding Work:
 
 Information:
-	Our Wedding:
-	* Venue information
-	* Embedded map
-
 	Travel Logistics
 	* Travel Information
 
@@ -15,8 +11,6 @@ Functionality:
 	Overall:
 	* Tab fade between pages
 	* Links pop into new tab
-	* Have tabs respond like links (md-nav-bar) 
-		https://material.angularjs.org/latest/demo/navBar
 
 	Our Story:
 	* Timeline

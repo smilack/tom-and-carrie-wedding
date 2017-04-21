@@ -47,6 +47,8 @@ header {
 	}
 
 section {
+	border-radius: 10px;
+	padding: 10px;
 	/*Background gradiant for sections*/
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+62,fcfcfc+100 */
 	background: #ffffff; /* Old browsers */
@@ -69,7 +71,7 @@ nav {
 
 .navbar {
 	background-color: white;
-	border-bottom: medium solid rgb(255, 0, 0);
+	border-bottom: medium solid rgb(255, 83, 13);
 }
 
 /*Home page */
@@ -152,6 +154,21 @@ font-family: 'Archivo Black', sans-serif;
 */
 
 /* color scheme:
+	Blues:
+		Darkest blue: #1e5799
+		Darker blue: #207cca
+		Lighter blue: #4494d6
+		Lightest blue: #7db9e8;
+
+	Red:
+		Darker red: rgb(255, 83, 13);
+		Lighter red: #FF0A00;
+
+
+	Yellow:
+	#F4FF19;
+
+
 Red: rgb(255, 0, 0);
 Blue: rgb(13, 197, 255); 
 Orange: rgb(232, 146, 12);
