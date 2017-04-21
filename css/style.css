@@ -72,8 +72,17 @@ nav {
 }
 
 /*Home page */
-.home-image {
+.home img {
 	border-radius: 10px;
+}
+
+.home h1 {
+    font-size: 100px;
+    padding: 75px 0px 0px 0px;
+}
+
+.home h2, .home h3 {
+	font-size: 75px;
 }
 
 /* Everything Madison */
