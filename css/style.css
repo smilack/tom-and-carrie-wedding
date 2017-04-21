@@ -68,12 +68,12 @@ nav {
 
 .navbar {
 	background-color: white;
-	border-bottom: medium solid rgb(255, 83, 13);
+	border-bottom: medium solid rgb(178, 18, 18);
 }
 
 /*Home page */
 .home {
-	background-color: rgb(255, 83, 13);
+	background-color: rgb(178, 18, 18);
 }
 	.home img {
 		border-radius: 10px;
@@ -86,7 +86,7 @@ nav {
 
 	.home h2, .home h3 {
 		font-size: 75px;
-		color: #F4FF19;
+		color: rgb(244, 255, 25);
 	}
 
 /* Everything Madison */
@@ -171,12 +171,11 @@ font-family: 'Archivo Black', sans-serif;
 		Lightest blue: #7db9e8;
 
 	Red:
-		Darker red: rgb(255, 83, 13);
-		Lighter red: #FF0A00;
+		Darker red: rgb(178, 18, 18);
+		Lighter red: rgb(255, 10, 0);
 
 
-	Yellow:
-	#F4FF19;
+	Yellow: rgb(244, 255, 25)
 
 
 Red: rgb(255, 0, 0);
