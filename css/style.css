@@ -1,16 +1,22 @@
 body {
-	padding-top: 50px;
+	padding-top: 50px; /* Aligns with navbar */
+
+	/*Typography*/
+	font-family: 'Raleway', sans-serif;
+
+	/* Background Gradiant Code */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,4494d6+9,7db9e8+100 */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e5799 0%, #207cca 0%, #4494d6 9%, #7db9e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
 /*Heading code */
 header {
 	text-align: center;
 	color: White;
-	/*Gradient from uigradients.com*/
-	background: #f85032; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #f85032 , #e73827); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #f85032 , #e73827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	margin-bottom: 30px;
 }
 	
 	/*Heading Typography*/
@@ -33,9 +39,20 @@ header {
 	h1, h2, h3 {
 		text-align: center;
 	}
+
+section {
+	/*Background gradiant for sections*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+62,fcfcfc+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 1%, #ffffff 62%, #fcfcfc 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 1%,#ffffff 62%,#fcfcfc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #ffffff 1%,#ffffff 62%,#fcfcfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 	
 /* Navigation bar */
 nav {
+	border-bottom: medium solid rgb(255, 0, 0);
 }
 	nav li {
 		display: inline-block;
@@ -53,10 +70,6 @@ nav {
 	border-radius: 75px;
 }
 
-/*Page body */
-body {
-	font-family: 'Raleway', sans-serif;
-}
 /* Everything Madison */
 
 li[ng-repeat] {
