@@ -1,9 +1,4 @@
-body {
-	padding-top: 50px; /* Aligns with navbar */
-
-	/*Typography*/
-	font-family: 'Raleway', sans-serif;
-
+html {
 	/* Background Gradiant Code */
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,4494d6+9,7db9e8+100 */
 	background: #1e5799; /* Old browsers */
@@ -11,6 +6,14 @@ body {
 	background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	padding-top: 50px; /* Aligns with navbar */
+
+	/*Typography*/
+	font-family: 'Raleway', sans-serif;
+
 }
 
 /*Heading code */
