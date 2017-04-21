@@ -52,6 +52,12 @@
  		templateUrl: 'templates/gallery-page.html'
  	};
  });
+
+ app.controller('ScrollController', function($scope, $location, $anchorScroll) {
+ 	var i = 1;
+
+ 	$scope.items = [{ id: i, name: 'Page'}]
+ })
  
 /*
    $scope.$watch('this.page', function(newVal, oldVal) {

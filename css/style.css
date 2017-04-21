@@ -48,6 +48,7 @@ header {
 section {
 	border-radius: 10px;
 	padding: 10px;
+	margin-bottom: 50px;
 	/*Background gradiant for sections*/
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+62,fcfcfc+100 */
 	background: #ffffff; /* Old browsers */
@@ -91,7 +92,7 @@ nav {
 
 	.home h1 {
 	    font-size: 100px;
-	    padding: 75px 0px 0px 0px;
+	    margin: 75px 0px 0px 0px;
 	}
 
 	.home h2, .home h3 {
@@ -121,12 +122,6 @@ li[ng-repeat] {
 }
 
 /*Registry page */
-.intro-registry {
-	color: rgb(13, 197, 255);
-	border: solid 5px rgb(219, 255, 13);
-	border-radius: 10px;
-	padding: 10px 15px;
-}
 
 .registry {
 	border-radius: 10px;
@@ -137,27 +132,6 @@ li[ng-repeat] {
 	.registry h2 {
 		font-family: 'Archivo Black', sans-serif;
 	}
-
-	.williams-sonoma {
-		background-color: #2d2d2d;
-	}
-		.williams-sonoma a {
-			color: white;
-		}
-
-	.bed-bath-beyond {
-		background-color: #3a1153;
-	}
-		.bed-bath-beyond a {
-		color: white;
-		}
-
-	.amazon {
-		background-color:#232f3e;
-	}
-		.amazon a {
-			color: #fba61c;
-		}
 
 /*Gallery page */
 .gallery-image {
