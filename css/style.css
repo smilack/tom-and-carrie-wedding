@@ -71,15 +71,15 @@ nav {
 	border-bottom: medium solid rgb(178, 18, 18);
 }
 
-/*Home page */
+/*Home Header */
 .home {
 	background-color: rgb(178, 18, 18);
 }
 	.home img {
+		padding: 0px;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		opacity: 0.8;
-    	filter: alpha(opacity=80); /* For IE8 and earlier */
+		margin: 10px 0px 15px 0px;
 	}
 
 	.home h1 {
