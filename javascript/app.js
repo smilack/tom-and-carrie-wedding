@@ -1,54 +1,8 @@
 (function() {
 
-//Declare module for website application 
-/*var app = angular.module('app', ['ngRoute'])
-.config(function($routeProvider) {
-	$routeProvider
-		.when('/', {
-			templateUrl: 'templates/home-page.html'
-		})
-		.when('/our-story', {
-			templateUrl: 'templates/our-story.html'
-		})
-		.when('/our-wedding', {
-			templateUrl: 'templates/our-wedding.html'
-		})
-		.when('/travel-logistics', {
-			templateUrl: 'templates/travel-logistics.html'
-		})
-		.when('/why-madison', {
-			templateUrl: 'templates/why-madison.html'
-		})
-		.when('/our-registries', {
-			templateUrl: 'templates/our-registries.html'
-		})
-		.when('/gallery', {
-			templateUrl: 'templates/gallery-page.html'
-		})
-		.otherwise({ redirectTo: '/' });
-});*/
-
  //Declare module for website application 
  var app = angular.module('app', []);
  
- //Controller manages pages user views when clicking tabs
-/* app.controller('PageController', function(){
- 
- 	//Sets a default page (home)
- 	this.page = 1;
- 
- 	//Identifies page matching anchor tag
- 	this.isSet = function(checkPage) {
- 		return this.page === checkPage;
- 	};
- 
- 	//Changes page to match page defined for anchor tag
- 	this.setPage = function(setPage) {
- 		this.page = setPage;
-  	};
-  });
-*/
-
 //Application page directives
   app.directive('homePage', function(){
   	return {
