@@ -53,49 +53,49 @@
   app.directive('homePage', function(){
   	return {
   		restrict: 'E',
-  		templateUrl: 'home-page.html'
+  		templateUrl: 'templates/home-page.html'
   	};
   });
   
  app.directive('ourStory', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'our-story.html'
+ 		templateUrl: 'templates/our-story.html'
  	};
  });
  
  app.directive('ourWedding', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'our-wedding.html'
+ 		templateUrl: 'templates/our-wedding.html'
 	};
  });
  
   app.directive('travelLogistics', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'travel-logistics.html'
+ 		templateUrl: 'templates/travel-logistics.html'
 	};
  });
 
  app.directive('whyMadison', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'why-madison.html'
+ 		templateUrl: 'templates/why-madison.html'
  	};
  });
  
  app.directive('ourRegistries', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'our-registries.html'
+ 		templateUrl: 'templates/our-registries.html'
  	};
  });
  
  app.directive('galleryPage', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'gallery-page.html'
+ 		templateUrl: 'templates/gallery-page.html'
  	};
  });
  
