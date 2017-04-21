@@ -76,7 +76,14 @@ nav {
 
 /*Home Header */
 .home {
+	color: rgb(255, 10, 0);
+	/* background-color: rgb(178, 18, 18); */
+	background-image:
+	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #FFFFFF 95%, #FFFFFF 103%, #f4ff19 104%, #f4ff19 112%, #1e5799 113%, #1e5799 121%, #FFFFFF 122%, #FFFFFF 130%, #4494d6 131%, #4494d6 140%),
+	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #FFFFFF 95%, #FFFFFF 103%, #f4ff19 104%, #f4ff19 112%, #1e5799 113%, #1e5799 121%, #FFFFFF 122%, #FFFFFF 130%, #4494d6 131%, #4494d6 140%);
+	background-size: 110px 110px;
 	background-color: rgb(178, 18, 18);
+	background-position: 0 0, 55px 55px;
 }
 
 	/*.home header {
@@ -91,13 +98,14 @@ nav {
 	}
 
 	.home h1 {
+		color: rgb(178, 18, 18);
 	    font-size: 100px;
 	    margin: 75px 0px 0px 0px;
 	}
 
 	.home h2, .home h3 {
 		font-size: 75px;
-		color: rgb(244, 255, 25);
+		color: rgb(255, 10, 0);
 	}
 
 .address {
@@ -135,8 +143,8 @@ li[ng-repeat] {
 
 /*Gallery page */
 .gallery-image {
-	border: 5px solid rgb(168, 115, 255);
-	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
 	display: inline-block;
 	margin-bottom: 20px;
 }
@@ -167,7 +175,7 @@ font-family: 'Archivo Black', sans-serif;
 
 	Red:
 		Darker red: rgb(178, 18, 18);
-		Lighter red: rgb(255, 10, 0);
+		Lighter red: rgb(255, 10, 0); ff0a00
 
 
 	Yellow: rgb(244, 255, 25)

@@ -1,13 +1,16 @@
 <div class="row">
-	<header class="col-md-12">
-		<h1>Gallery</h1>
-		<h2>A curated display of our faces</h2>
-		<h3>#HouseCrowlack</h3>
+	<header>
+		<div class="col-md-8">
+			<h1>Gallery</h1>
+		</div>
+		<div class="col-md-4">
+			<h2>A curated display of our faces</h2>
+		</div>
 	</header>
 </div>
 <section ng-controller= "GalleryController as galCtrl">
 	<div class="row">
-		<div class="col-md-offset-2 col-md-8" ng-repeat="photo in galCtrl.photos">
+		<div class="col-md-offset-1 col-md-10" ng-repeat="photo in galCtrl.photos">
 			<div class="gallery-image">
 				<img ng-src="{{photo.image}}" class="img-responsive" height="400px" alt="{{photo.description}}" />
 				<h2>{{photo.date}} - {{photo.location}}</h2>
