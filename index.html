@@ -24,31 +24,37 @@
 
 				<ul class="nav nav-pills nav-justified">
 					<li>
-						<a href="#!/">Home</a>
+						<a href="#">Home</a>
 					</li>
 					<li>
-						<a href="#!/our-story">Our Story</a>
+						<a href="#story">Our Story</a>
 					</li>
 					<li>
-						<a href="#!/our-wedding">Our Wedding</a>
+						<a href="#wedding">Our Wedding</a>
 					</li>
 					<li>
-						<a href="#!/travel-logistics">Travel Logistics</a>
+						<a href="#logistics">Travel Logistics</a>
 					</li>
 					<li>
-						<a href="#!/why-madison">Why Madison</a>
+						<a href="#madison">Why Madison</a>
 					</li>
 					<li>
-						<a href="#!/our-registries">Our Registries</a>
+						<a href="#registries">Our Registries</a>
 					</li>
 					<li>
-						<a href="#!/gallery">Gallery</a>
+						<a href="#gallery">Gallery</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="container">
-			<div ng-view></div>
+			<home-page id="#"></home-page>
+			<our-story id="story"></our-story>
+			<our-wedding id="wedding"></our-wedding>
+			<travel-logistics id="logistics"></travel-logistics>
+			<why-madison id="madison"></why-madison>
+			<our-registries id="registries"></our-registries>
+			<gallery-page id="gallery"></gallery-page>
 		</div>
 	</body>
 </html>
