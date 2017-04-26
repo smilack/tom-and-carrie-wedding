@@ -158,6 +158,9 @@ li[ng-repeat] {
 		.gallery-image h2 {
 			font-family: 'Architects Daughter', cursive;
 		}
+.img-thumbnail {
+	max-height: 140px;
+}
 
 /* font families:
 font-family: 'Amatic SC', cursive;
