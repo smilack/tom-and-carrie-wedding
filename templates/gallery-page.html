@@ -17,12 +17,12 @@
 				<p>{{photo.description}}</p>
 			</div>
 		</div>
-	</div> --> -->
+	</div> -->
 	<!-- slider container -->
 	<div class="row">
 		<div class="col-md-offset-1 col-md-10">
 		<!-- enumerate all photos -->
-			<img ng-repeat="photo in galCtrl.photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.image}}" />
+			<img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.image}}" />
 			<!-- prev / next controls -->
 			<a class="arrow prev" href="#" ng-click="showPrev()"></a>
 			<a class="arrow next" href="#" ng-click="showNext()"></a>
