@@ -1,7 +1,7 @@
 (function() {
 
  //Declare module for website application 
- var app = angular.module('app', []);
+ var app = angular.module('app', ['ngAnimate', 'ngTouch']);
  
 //Application page directives
   app.directive('homePage', function(){
@@ -121,8 +121,31 @@ var madison = [{
 }]}];
 
 //Controller manages viewing array of Gallery Photos
-app.controller('GalleryController', function(){
-	this.photos = gallery;
+app.controller('GalleryController', function($scope){
+	$scope.photos = gallery;
+
+	// initial image index
+	$scope._Index = 0;
+
+	// if a current image is the same as requested image
+	$scope.isActive = function (index) {
+	return $scope._Index === index;
+	};
+
+	// show prev image
+	$scope.showPrev = function () {
+	$scope._Index = ($scope._Index > 0) ? --$scope._Index : $scope.photos.length - 1;
+	};
+
+	// show next image
+	$scope.showNext = function () {
+	$scope._Index = ($scope._Index < $scope.photos.length - 1) ? ++$scope._Index : 0;
+	};
+	
+	// show a certain image
+	$scope.showPhoto = function (index) {
+	$scope._Index = index;
+	};
 });
 
 //Array of Photos for gallery-page.html

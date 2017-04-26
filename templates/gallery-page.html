@@ -19,4 +19,23 @@
 		</div>
 		<!-- Create a two column scroll column with thumbnails, and a 6 column full display. Date and details only come up in the full display-->
 	</div>
+	<!-- slider container -->
+	<div class="row">
+		<!-- enumerate all photos -->
+		<img ng-repeat="photo in galCtrl.photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.image}}" />
+		<!-- prev / next controls -->
+		<a class="arrow prev" href="#" ng-click="showPrev()"></a>
+		<a class="arrow next" href="#" ng-click="showNext()"></a>
+		<!-- extra navigation controls -->
+		<ul class="nav">
+			<li ng-repeat="photo in galCtrl.photos" ng-class="{'active':isActive($index)}">
+				<div class="gallery-image">
+				<img src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
+					<h2>{{photo.date}} - {{photo.location}}</h2>
+					<p>{{photo.description}}</p>
+				</div>
+			</li>
+		</ul>
+	</div>
 </section>
+
