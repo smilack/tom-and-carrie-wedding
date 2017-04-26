@@ -11,17 +11,17 @@
 <section ng-controller= "GalleryController as galCtrl">
 	<!-- slider container -->
 	<div class="row">
-		<div class="col-md-offset-1 col-md-8">
+		<div class="col-md-offset-1 col-md-10">
 			<!-- enumerate all photos -->
 			<div class="gallery-image">
 				<img id="gallery-slider" ng-repeat="photo in photos" class="slide img-responsive" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.image}}" />
-				<label>
-					<h2>{{photo.date}} - {{photo.location}}</h2>
-					<p>{{photo.description}}</p>
-				</label>
+				<h2>{{photo.date}} - {{photo.location}}</h2><br/>
+				<p>{{photo.description}}</p>
 			</div>
 		</div>
-		<div class="col-md-2">
+	</div>
+	<div class="row">
+		<div class="col-md-offset-1 col-md-10">
 			<ul class="nav">
 				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
 					<img class="img-thumbnail" ng-src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
