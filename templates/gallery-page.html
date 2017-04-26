@@ -22,7 +22,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-offset-1 col-md-10">
-			<ul class="nav">
+			<ul class="photo-nav">
 				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
 					<img class="img-thumbnail" ng-src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
 				</li>

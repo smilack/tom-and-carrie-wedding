@@ -196,7 +196,7 @@ li[ng-repeat] {
 		opacity:1;
 	}
 */
-.nav {
+.photo-nav {
 	bottom: -4px;
 	display: block;
 	height: 48px;
@@ -210,7 +210,7 @@ li[ng-repeat] {
 	z-index: 5;
 }
 
-	.nav li {
+	.photo-nav li {
 		border: 5px solid #AAAAAA;
 		border-radius: 5px;
 		cursor: pointer;
@@ -221,11 +221,11 @@ li[ng-repeat] {
 		width: 50px;
 	}
 
-	.nav li.active {
+	.photo-nav li.active {
 		border: 5px solid #FFFFFF;
 	}
 
-.nav li img {
+.photo-nav li img {
 	width: 100%;
 }
 
