@@ -122,7 +122,48 @@ var madison = [{
 
 //Controller manages viewing array of Gallery Photos
 app.controller('GalleryController', function($scope){
-	$scope.photos = gallery;
+	$scope.photos = [{
+	image: 'images/gallery/Tarrie-12-13.jpg',
+	date: 'December 2013',
+	location: 'Chicago Kristkindlemarkt',
+	description: 'We visited the popular German Christmas market in downtown Chicago'
+}, {
+	image: 'images/gallery/Tarrie-06-14.jpg',
+	date: 'June 2014',
+	location: 'Vienna Botanical Gardens',
+	description: 'We spent a wonderful day in Vienna for Hunter and Gabrielles wedding'
+	}, {
+	image: 'images/gallery/Tarrie-08-14.jpg',
+	date: 'August 2014',
+	location: 'Palisades Park',
+	description: 'We hiked the palisades park in Decorah Iowa'
+}, {
+	image: 'images/gallery/Tarrie-08-14-2.jpg',
+	date: 'August 2014',
+	location: 'Minnetrista',
+	description: 'We hit the gorgeous Minnetrista in Muncie, IN while visiting Toms grandmother'
+}, {
+	image: 'images/gallery/Tarrie-10-14.jpg',
+	date: 'October 2014',
+	location: 'Downtown Madison',
+	description: 'Halloween - the Dark Nighty Night and Man of Steal hit the town!'
+}, {
+	image: 'images/gallery/Tarrie-07-15.JPG',
+	date: 'July 2015',
+	location: 'Antwerp, Belgium',
+	description: 'Us being cute in the Antwerp zoo!'
+}, {
+	image: 'images/gallery/Tarrie-01-16.jpeg',
+	date: 'January 2016',
+	location: 'Vintage Bar and Grill',
+	description: 'Us enjoying a five course meal with friends at the Vintage bar and Grille in Madison'
+}, {
+	image: 'images/gallery/Tarrie-07-16.jpg',
+	date: 'July 2016',
+	location: 'Pikes Peak',
+	description: 'Nothing like a selfie on the summit of an enormous mountain!'
+}];
+
 
 	// initial image index
 	$scope._Index = 0;
@@ -141,7 +182,7 @@ app.controller('GalleryController', function($scope){
 	$scope.showNext = function () {
 	$scope._Index = ($scope._Index < $scope.photos.length - 1) ? ++$scope._Index : 0;
 	};
-	
+
 	// show a certain image
 	$scope.showPhoto = function (index) {
 	$scope._Index = index;
