@@ -1,5 +1,7 @@
 #timeline-container {
    position: relative;
+   margin-left: 5%;
+   width: 90%;
 }
 
 #timeline {

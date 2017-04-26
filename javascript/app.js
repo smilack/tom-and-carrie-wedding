@@ -14,6 +14,7 @@
  app.directive('ourStory', function(){
  	return {
  		restrict: 'E',
+      controller: 'StoryController',
  		templateUrl: 'templates/our-story.html'
  	};
  });
@@ -57,16 +58,12 @@
  	var i = 1;
 
  	$scope.items = [{ id: i, name: 'Page'}]
- })
- 
-/*
-   $scope.$watch('this.page', function(newVal, oldVal) {
-      if(newVal.page == 2) {
-         $timeout(function() { angular.element($window).triggerHandler('resize'); }, 0);
-      }
-   }, true);
-*/
+ });
 
+ app.controller('StoryController', ['$window', '$timeout', function($window, $timeout) {
+   $timeout(function() { angular.element($window).triggerHandler('resize'); }, 0);
+ }]);
+ 
 //Controller manages viewing array of Madison activities
 app.controller('ActivityController', function(){
 	this.list = madison;
