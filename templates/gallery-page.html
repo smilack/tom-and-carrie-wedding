@@ -15,8 +15,8 @@
 			<!-- enumerate all photos -->
 			<div class="gallery-image">
 				<img id="gallery-slider" ng-repeat="photo in photos" class="slide img-responsive" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
-				<h2>{{photo.date}} - {{photo.location}}</h2>
-				<p>{{photo.description}}</p>
+				<h2>{{date}} - {{location}}</h2>
+				<p>{{description}}</p>
 			</div>
 		</div>
 	</div>
@@ -30,13 +30,12 @@
 	</div>
 	<div class="row">
 		<div class="col-md-offset-1">
-			<ul class="photo-nav">
-				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)} col-md-1">
+			<ul>
+				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
 					<img class="img-thumbnail" ng-src="{{photo.src}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
 				</li>
 			</ul>
 		</div>
 	</div>
-
 </section>
 
