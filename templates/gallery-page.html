@@ -30,7 +30,7 @@
 		<ul class="nav">
 			<li ng-repeat="photo in galCtrl.photos" ng-class="{'active':isActive($index)}">
 				<div class="gallery-image">
-				<img src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
+				<img ng-src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
 					<h2>{{photo.date}} - {{photo.location}}</h2>
 					<p>{{photo.description}}</p>
 				</div>
