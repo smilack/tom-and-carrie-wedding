@@ -5,7 +5,7 @@ var app = angular.module('app');
 app.directive('resize', ['$window', function($window) {
    return {
       link: link,
-      restrict: 'E'
+      restrict: 'A'
    };
 
    function link(scope, element, attrs) {
