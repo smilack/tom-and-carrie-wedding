@@ -9,14 +9,12 @@
 	</header>
 </div>
 <section ng-controller= "GalleryController as galCtrl">
-	<!-- slider container -->
 	<div class="row">
 		<div class="col-md-10">
-			<!-- enumerate all photos -->
-			<div class="gallery-image">
-				<img id="gallery-slider" ng-repeat="photo in photos" class="slide img-responsive" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
-				<h2>{{date}} - {{location}}</h2>
-				<p>{{description}}</p>
+			<div class="gallery-image" ng-repeat="photo in photos">
+				<img id="gallery-slider" class="slide img-responsive" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
+				<h2>{{photo.date}} - {{photo.location}}</h2>
+				<p>{{photo.description}}</p>
 			</div>
 		</div>
 		<div class="col-md-2">
