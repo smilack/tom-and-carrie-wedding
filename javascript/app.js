@@ -46,7 +46,7 @@
  	};
  });
  
- app.directive('galleryPage', function($scope){
+ app.directive('galleryPage', function(){
  	return {
  		restrict: 'E',
  		templateUrl: 'templates/gallery-page.html'
