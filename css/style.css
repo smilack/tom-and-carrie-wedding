@@ -195,7 +195,7 @@ li[ng-repeat] {
 	.arrow.next:hover{
 		opacity:1;
 	}
-*/
+
 .photo-nav {
 	bottom: -4px;
 	display: block;
@@ -228,7 +228,7 @@ li[ng-repeat] {
 .photo-nav li img {
 	width: 100%;
 }
-
+*/
 .slider {
 	border: 15px solid #FFFFFF;
 	border-radius: 5px;
