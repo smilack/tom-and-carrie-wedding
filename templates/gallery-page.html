@@ -9,7 +9,7 @@
 	</header>
 </div>
 <section ng-controller= "GalleryController as galCtrl">
-	<div class="row">
+<!--	<div class="row">
 		<div class="col-md-offset-1 col-md-10" ng-repeat="photo in galCtrl.photos">
 			<div class="gallery-image">
 				<img ng-src="{{photo.image}}" class="img-responsive" height="400px" alt="{{photo.description}}" />
@@ -17,8 +17,7 @@
 				<p>{{photo.description}}</p>
 			</div>
 		</div>
-		<!-- Create a two column scroll column with thumbnails, and a 6 column full display. Date and details only come up in the full display-->
-	</div>
+	</div> --> -->
 	<!-- slider container -->
 	<div class="row">
 		<div class="col-md-offset-1 col-md-10">
@@ -31,7 +30,7 @@
 			<ul class="nav">
 				<li ng-repeat="photo in galCtrl.photos" ng-class="{'active':isActive($index)}">
 					<div class="gallery-image">
-					<img ng-src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
+						<img ng-src="{{photo.image}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
 						<h2>{{photo.date}} - {{photo.location}}</h2>
 						<p>{{photo.description}}</p>
 					</div>
