@@ -1,32 +1,64 @@
 (function() {
 
-//Declare module for website application 
-var app = angular.module('app', ['ngRoute'])
-.config(function($routeProvider) {
-	$routeProvider
-		.when('/', {
-			templateUrl: 'templates/home-page.html'
-		})
-		.when('/our-story', {
-			templateUrl: 'templates/our-story.html'
-		})
-		.when('/our-wedding', {
-			templateUrl: 'templates/our-wedding.html'
-		})
-		.when('/travel-logistics', {
-			templateUrl: 'templates/travel-logistics.html'
-		})
-		.when('/why-madison', {
-			templateUrl: 'templates/why-madison.html'
-		})
-		.when('/our-registries', {
-			templateUrl: 'templates/our-registries.html'
-		})
-		.when('/gallery', {
-			templateUrl: 'templates/gallery-page.html'
-		})
-		.otherwise({ redirectTo: '/' });
-});
+ //Declare module for website application 
+ var app = angular.module('app', []);
+ 
+//Application page directives
+  app.directive('homePage', function(){
+  	return {
+  		restrict: 'E',
+  		templateUrl: 'templates/home-page.html'
+  	};
+  });
+  
+ app.directive('ourStory', function(){
+ 	return {
+ 		restrict: 'E',
+ 		templateUrl: 'templates/our-story.html'
+ 	};
+ });
+ 
+ app.directive('ourWedding', function(){
+ 	return {
+ 		restrict: 'E',
+ 		templateUrl: 'templates/our-wedding.html'
+	};
+ });
+ 
+  app.directive('travelLogistics', function(){
+ 	return {
+ 		restrict: 'E',
+ 		templateUrl: 'templates/travel-logistics.html'
+	};
+ });
+
+ app.directive('whyMadison', function(){
+ 	return {
+ 		restrict: 'E',
+ 		templateUrl: 'templates/why-madison.html'
+ 	};
+ });
+ 
+ app.directive('ourRegistries', function(){
+ 	return {
+ 		restrict: 'E',
+ 		templateUrl: 'templates/our-registries.html'
+ 	};
+ });
+ 
+ app.directive('galleryPage', function(){
+ 	return {
+ 		restrict: 'E',
+ 		templateUrl: 'templates/gallery-page.html'
+ 	};
+ });
+
+ app.controller('ScrollController', function($scope, $location, $anchorScroll) {
+ 	var i = 1;
+
+ 	$scope.items = [{ id: i, name: 'Page'}]
+ })
+ 
 /*
    $scope.$watch('this.page', function(newVal, oldVal) {
       if(newVal.page == 2) {
