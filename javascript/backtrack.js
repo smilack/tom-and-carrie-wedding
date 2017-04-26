@@ -55,7 +55,7 @@ var TimelineBacktrack = {
    async arrangeEvents(allEvents, eventElements, lineElements, scope, animate) {
       var i = 0,
           iterations = 0,
-          MAX_ITERS = allEvents.length * allEvents.length * (70 - 5) / 5;
+          MAX_ITERS = Math.pow(allEvents.length, 2);
 
       while(i >= 0 && i < allEvents.length && iterations < MAX_ITERS) {
          iterations++;
