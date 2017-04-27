@@ -10,13 +10,17 @@
 </div>
 <section ng-controller= "GalleryController as galCtrl">
 	<div class="row">
+		<!--Active image display-->
 		<div class="col-md-10">
-			<div id="gallery-slider" class="gallery-image" ng-repeat="photo in photos" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
+			<div id="gallery-slider" class="box" ng-repeat="photo in photos" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
 				<img class="slide img-responsive" ng-src="{{photo.src}}" />
-				<h2>{{photo.date}} - {{photo.location}}</h2>
-				<p>{{photo.description}}</p>
+				<div class="padding text-center">
+					<h2>{{photo.date}} - {{photo.location}}</h2>
+					<p>{{photo.description}}</p>
+				</div>
 			</div>
 		</div>
+		<!--Thumbnail column-->
 		<div class="col-md-2">
 			<ul>
 				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
@@ -25,6 +29,7 @@
 			</ul>
 		</div>
 	</div>
+	<!--Row with glyphicon links to toggle pictures-->
 	<div class="row">
 		<div class="col-md-1">
 			<a class="glyphicon glyphicon-menu-left" href="#gallery-slider" ng-click="showPrev()"></a>
@@ -34,4 +39,3 @@
 		</div>
 	</div>
 </section>
-

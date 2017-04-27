@@ -21,14 +21,14 @@
 		</div>
 	</div>
 	<!--Activities list managed in app.js madison array -->
-	<div class="row" ng-repeat="activity in actCtrl.list">
+	<div class="row margin-top" ng-repeat="activity in actCtrl.list">
 		<div class="col-md-offset-2 col-md-1">
 			<h2>{{activity.category}}</h2>
 		</div>
 		<div class="col-md-7">
 			<ul>
 				<li ng-repeat="field in activity.items">
-					<div class="activity">
+					<div class="text-center">
 						<h3><a ng-href="{{field.link}}">{{field.name}}</a></h3><br>
 						<p>{{field.description}}</p>
 						<a ng-href={{field.map}}>Map</a>

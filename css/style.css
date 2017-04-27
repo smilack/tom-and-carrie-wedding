@@ -1,6 +1,8 @@
-body {
+body, header {
 	padding-top: 50px; /* Aligns with navbar */
+}
 
+body {
 	/*Typography*/
 	font-family: 'Raleway', sans-serif;
 
@@ -15,50 +17,8 @@ body {
 	background-attachment: fixed;
 }
 
-/*Heading code */
-header {
-	text-align: center;
-	color: White;
-	margin-top: 50px; /* Aligns with navbar */
-}
-	
-	/*Heading Typography*/
-	h1 {
-		font-family: 'Raleway', sans-serif;
-		font-weight: bolder;
-		font-size: 75px;
-		}
-
-	h2 {
-		font-family: 'Architects Daughter', cursive;
-		font-size:40px;
-	}
-
-	h3 {
-		font-family: 'Amatic SC', cursive;
-		font-size:40px;
-	}
-
-	h1, h2, h3 {
-		text-align: center;
-	}
-
-section {
-	border-radius: 10px;
-	padding: 10px;
-	margin-bottom: 50px;
-	/*Background gradiant for sections*/
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+62,fcfcfc+100 */
-	background: #ffffff; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover, #ffffff 1%, #ffffff 62%, #fcfcfc 100%); /* FF3.6-15 */
-	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 1%,#ffffff 62%,#fcfcfc 100%); /* Chrome10-25,Safari5.1-6 */
-	background: radial-gradient(ellipse at center, #ffffff 1%,#ffffff 62%,#fcfcfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-	
 /* Navigation bar */
 nav {
-
 }
 	nav li {
 		display: inline-block;
@@ -74,7 +34,6 @@ nav {
 
 /*Home Header */
 .home {
-	color: rgb(255, 10, 0);
 	background-image:
 	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
 	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
@@ -85,15 +44,12 @@ nav {
 
 	.home header {
 		background-color: #FFFFFF;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		border-radius: 10px;
 		padding: 20px;
 		margin-top: 160px;
 	}
 
 	.home img {
 		padding: 0px;
-		/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 	}
 
 	.home h1 {
@@ -106,19 +62,73 @@ nav {
 		color: rgb(178, 18, 18);
 	}
 
-.address {
+/*All heading code */
+header {
+	color: White;
+}
+	
+/*Typography*/
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	font-size: 75px;
+	}
+
+h2 {
+	font-family: 'Architects Daughter', cursive;
+	font-size:40px;
+}
+
+h3 {
+	font-family: 'Amatic SC', cursive;
+	font-size:40px;
+}
+
+h4 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size:40px;
+}
+
+h1, h2, h3, h4 {
 	text-align: center;
-	padding: 10px 20px;
-	margin: 0 0 20px;
+}
+
+section {
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 50px;
+	/*Background gradiant for sections*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+62,fcfcfc+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 1%, #ffffff 62%, #fcfcfc 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 1%,#ffffff 62%,#fcfcfc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #ffffff 1%,#ffffff 62%,#fcfcfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+	
+.box {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.margin-top {
+	margin-top: 20px;
+}
+
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.padding {
+	padding: 10px 30px 25px 30px;
+}
+
+.address {
 	font-size: 17.5px;
 }
 	.address blockquote {
 		border-left: none;
 	}
-
-.subsection {
-	margin-top: 20px;
-}
 
 /* Everything Madison */
 
@@ -126,38 +136,7 @@ li[ng-repeat] {
 	list-style: none;
 }
 
-.activy p {
-	text-align: center;
-}
-
-/*Registry page */
-
-.registry {
-	border-radius: 10px;
-	padding: 10px 30px 25px 30px;
-	margin-top: 20px;
-}
-	
-	.registry h2 {
-		font-family: 'Archivo Black', sans-serif;
-	}
-
 /*Gallery page */
-.gallery-image {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius: 10px;
-}
-	.gallery-image img {
-		margin-bottom: 10px;
-	}
-
-	.gallery-image p, .gallery-image h2 {
-		text-align: center;
-		color: black;
-	}
-		.gallery-image h2 {
-			font-family: 'Architects Daughter', cursive;
-		}
 .img-thumbnail {
 	max-height: 140px;
 }
@@ -193,132 +172,3 @@ radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207
 background-size: 110px 110px;
 background-color: rgb(178, 18, 18);
 background-position: 0 0, 55px 55px; */
-
-/*Information from script-tutorials */
-
-/* Replace with Glyphicons
-.arrow {
-	cursor: pointer;
-	display: block;
-	height: 64px;
-	margin-top: -35px;
-	outline: medium none;
-	position: absolute;
-	top: 50%;
-	width: 64px;
-	z-index: 5;
-}
-
-	.arrow.prev {
-		background-image: url("../images/prev.png");
-		left: 20px;
-		opacity: 0.2;
-		transition: all 0.2s linear 0s;
-		}
-
-	.arrow.next {
-		background-image: url("../images/next.png");
-		opacity: 0.2;
-		right: 20px;
-		transition: all 0.2s linear 0s;
-	}
-
-	.arrow.prev:hover{
-		opacity:1;
-	}
-
-	.arrow.next:hover{
-		opacity:1;
-	}
-
-.photo-nav {
-	bottom: -4px;
-	display: block;
-	height: 48px;
-	left: 0;
-	margin: 0 auto;
-	padding: 1em 0 0.8em;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	width: 100%;
-	z-index: 5;
-}
-
-	.photo-nav li {
-		border: 5px solid #AAAAAA;
-		border-radius: 5px;
-		cursor: pointer;
-		display: inline-block;
-		height: 30px;
-		margin: 0 8px;
-		position: relative;
-		width: 50px;
-	}
-
-	.photo-nav li.active {
-		border: 5px solid #FFFFFF;
-	}
-
-.photo-nav li img {
-	width: 100%;
-}
-
-.slider {
-	border: 15px solid #FFFFFF;
-	border-radius: 5px;
-	height: 500px;
-	margin: 20px auto;
-	position: relative;
-	width: 800px;
-	-webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
-	-ms-perspective: 1000px;
-	-o-perspective: 1000px;
-	perspective: 1000px;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-
-.slide {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-	.slide.ng-hide-add {
-		opacity:1;
-		-webkit-transition:1s linear all;
-		-moz-transition:1s linear all;
-		-o-transition:1s linear all;
-		transition:1s linear all;
-		-webkit-transform: rotateX(50deg) rotateY(30deg);
-		-moz-transform: rotateX(50deg) rotateY(30deg);
-		-ms-transform: rotateX(50deg) rotateY(30deg);
-		-o-transform: rotateX(50deg) rotateY(30deg);
-		transform: rotateX(50deg) rotateY(30deg);
-		-webkit-transform-origin: right top 0;
-		-moz-transform-origin: right top 0;
-		-ms-transform-origin: right top 0;
-		-o-transform-origin: right top 0;
-		transform-origin: right top 0;
-	}
-
-		.slide.ng-hide-add.ng-hide-add-active {
-			opacity:0;
-		}
-	.slide.ng-hide-remove {
-		-webkit-transition:1s linear all;
-		-moz-transition:1s linear all;
-		-o-transition:1s linear all;
-		transition:1s linear all;
-		display:block!important;
-		opacity:0;
-	}
-
-		.slide, .slide.ng-hide-remove.ng-hide-remove-active {
-			opacity:1;
-		}
