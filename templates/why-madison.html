@@ -11,7 +11,7 @@
 
 <section ng-controller="ActivityController as actCtrl">
 	<div class="row">
-		<div class="col-md-offset-2 col-md-8">
+		<div class="col-md-offset-2 col-md-8 margin-bottom">
 			<p>
 				Madison has been a vivid part of our story. The entire lifecycle of our relationship - where we met, our first date, our first kiss, where we got engaged - all of it happened while living on the isthmus. <br/><br/>
 				We know it's not close to everyone. The sad truth is, there is no one place near all the people we love. <br/><br/>
@@ -21,14 +21,14 @@
 		</div>
 	</div>
 	<!--Activities list managed in app.js madison array -->
-	<div class="row margin-top" ng-repeat="activity in actCtrl.list">
+	<div class="row margin-bottom" ng-repeat="activity in actCtrl.list">
 		<div class="col-md-offset-2 col-md-1">
 			<h2>{{activity.category}}</h2>
 		</div>
 		<div class="col-md-7">
 			<ul>
 				<li ng-repeat="field in activity.items">
-					<div class="text-center">
+					<div class="text-center padding">
 						<h3><a ng-href="{{field.link}}">{{field.name}}</a></h3><br>
 						<p>{{field.description}}</p>
 						<a ng-href={{field.map}}>Map</a>

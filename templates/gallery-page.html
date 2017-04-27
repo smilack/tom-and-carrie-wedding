@@ -11,9 +11,9 @@
 <section ng-controller= "GalleryController as galCtrl">
 	<div class="row">
 		<!--Active image display-->
-		<div class="col-md-10">
-			<div id="gallery-slider" class="box" ng-repeat="photo in photos" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
-				<img class="slide img-responsive" ng-src="{{photo.src}}" />
+		<div id="gallery-slider" class="col-md-10">
+			<div class="box" ng-repeat="photo in photos" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
+				<img class="img-responsive" ng-src="{{photo.src}}" />
 				<div class="padding text-center">
 					<h2>{{photo.date}} - {{photo.location}}</h2>
 					<p>{{photo.description}}</p>
