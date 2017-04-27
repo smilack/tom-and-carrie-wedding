@@ -1,5 +1,12 @@
 Outstanding Work:
 
+Prior to Going Live:
+* Planes, Trains, Automobiles
+* Hotel Block tbd
+* Scaling of header
+* Scaling of gallery
+Timeline content
+
 Information:
 	Travel Logistics
 	* Travel Information
@@ -9,11 +16,7 @@ Information:
 
 Functionality:
 	Overall:
-	* Tab fade between pages
 	* Links pop into new tab
-
-	Our Story:
-	* Timeline
 
 	Our Wedding:
 	* Determine how to keep information private
@@ -25,14 +28,9 @@ Functionality:
 	* Toggle Madison activities visibility
 
 	Gallery:
-	* Gallery pop up
-	* Gallery ordering
 	* Gallery sorting
 
 Refactoring:
-	* Separate madison array into data file
-	* Separate gallery array into separate data file
-	* Break out Angular into separate files
 	* Optimize CSS
 
 Design:
@@ -40,7 +38,6 @@ Design:
 	* Active tabs match header/body background
 	* Finalize header style
 	* Determine body style
-	* Finalize body width
 
 	Our Story:
 	* Design boxes with Milestones
@@ -64,4 +61,3 @@ Content:
 	Everything Madison:
 	* Pictures of Madison
 	* Complete list of recommendations
-
