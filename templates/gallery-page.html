@@ -10,13 +10,28 @@
 </div>
 <section ng-controller= "GalleryController as galCtrl">
 	<div class="row">
-		<div class="col-md-offset-1 col-md-10" ng-repeat="photo in galCtrl.photos">
-			<div class="gallery-image">
-				<img ng-src="{{photo.image}}" class="img-responsive" height="400px" alt="{{photo.description}}" />
+		<div class="col-md-10">
+			<div id="gallery-slider" class="gallery-image" ng-repeat="photo in photos" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
+				<img class="slide img-responsive" ng-src="{{photo.src}}" />
 				<h2>{{photo.date}} - {{photo.location}}</h2>
 				<p>{{photo.description}}</p>
 			</div>
 		</div>
-		<!-- Create a two column scroll column with thumbnails, and a 6 column full display. Date and details only come up in the full display-->
+		<div class="col-md-2">
+			<ul>
+				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+					<img class="img-thumbnail" ng-src="{{photo.src}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+			<a class="glyphicon glyphicon-menu-left" href="#gallery-slider" ng-click="showPrev()"></a>
+		</div>
+		<div class="col-md-offset-10 col-md-1">
+			<a class="glyphicon glyphicon-menu-right" href="#gallery-slider" ng-click="showNext()"></a>
+		</div>
 	</div>
 </section>
+
