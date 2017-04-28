@@ -11,14 +11,14 @@
 
 <section ng-controller="ActivityController as actCtrl">
 	<div class="row">
-		<div class="col-md-offset-1 col-md-10 margin-bottom">
+		<div class="col-md-offset-1 col-md-10">
 			<h2>Why Madison?</h2>
 			<p>
 				Madison has been a vivid part of our story. The entire lifecycle of our relationship - where we met, our first date, our first kiss, where we got engaged - all of it happened while living on the isthmus. <br/><br/>
 				We know it's not close to everyone. The sad truth is, there is no one place near all the people we love. <br/><br/>
 				So, we decided to share the beautiful corners of our home. We included a list of many of the amazing things that keep us living in Madison!
 			</p>
-			<img class="img-responsive center-block home-image" src="http://cdn.newsmax.com/CMSPages/GetFile.aspx?guid=32cf0b2a-5274-4194-8c74-05140d230069&SiteName=Newsmax&maxsidesize=600" alt="The city over the lake"/><br/><br/>
+			<img class="img-responsive center-block home-image" src="http://cdn.newsmax.com/CMSPages/GetFile.aspx?guid=32cf0b2a-5274-4194-8c74-05140d230069&SiteName=Newsmax&maxsidesize=600" alt="The city over the lake"/><br/>
 			<h2>Things to Do</h2>
 		</div>
 	</div>
@@ -30,7 +30,7 @@
 		<div class="col-md-8">
 			<ul>
 				<li ng-repeat="field in activity.items">
-					<div class="text-center padding">
+					<div class="text-center">
 						<h3><a ng-href="{{field.link}}" target="_blank">{{field.name}}</a></h3>
 						<p>{{field.description}}</p>
 						<a ng-href={{field.map}} target="_blank">Map</a>
