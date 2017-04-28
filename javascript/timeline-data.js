@@ -5,7 +5,7 @@ var timelineData = {
    events: [
       {
          title: "Moved in Together",
-         description: "Tom and Carrie met when they moved in together with mutual friends",
+         description: "Tom and Carrie met when they moved in together with Hunter and Emily",
          date: new Date(2012, Months.AUG),
          day: false,
          photo: ""
@@ -55,7 +55,7 @@ var timelineData = {
       {
          title: "First Thanksgiving Together",
          description: "We spent it in Ohio with Carrie's Aunt and Uncle",
-         date: new Date(2014, Months.NOV),
+         date: new Date(2014, Months.NOV, 27),
          day: false,
          photo: ""
       },
@@ -105,13 +105,13 @@ var timelineData = {
          title: "Moving Day",
          description: "Tom and Carrie spent the day moving furniture, and had a late lunch on the rooftop garden of Brickhouse BBQ",
          date: new Date(2013, Months.AUG, 4),
-         photo: "",
+         photo: ""
       },
       {
-         title: "Anniversary",
-         description: "We spent our second Anniversary in Cedarburg, WI enjoying Cedar Creek Winery",
-         date: new Date(2014, Months.NOV, 1),
-         photo: "",
+         title: "Governor Dodge Boulder Bash",
+         description: "Tom takes Carrie rock climbing outside for the first time",
+         date: new Date(2015, Months.OCT, 3),
+         photo: ""
       }
    ]
 };
