@@ -127,6 +127,21 @@ section {
 		border-left: none;
 	}
 
+/* Registry section */
+.registry-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.registry-row a {
+   width: 25%;
+}
+
+.registry-row img {
+   width: 100%;
+}
+
 /* Everything Madison */
 
 li[ng-repeat] {
