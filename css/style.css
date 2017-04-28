@@ -5,6 +5,7 @@ body, header {
 body {
 	/*Typography*/
 	font-family: 'Raleway', sans-serif;
+	text-align: center;
 
 	/* Background Gradiant Code */
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,4494d6+9,7db9e8+100 */
@@ -23,7 +24,6 @@ nav {
 	nav li {
 		display: inline-block;
 		margin: 10px;
-		text-align: center;
 		font-family: 'Raleway', sans-serif;
 	}
 
@@ -89,7 +89,7 @@ h4 {
 	font-size:40px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
 	text-align: center;
 }
 
