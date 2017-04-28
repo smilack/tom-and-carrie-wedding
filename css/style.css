@@ -144,7 +144,7 @@ section {
 
 /* Everything Madison */
 
-li[ng-repeat] {
+li {
 	list-style: none;
 }
 
