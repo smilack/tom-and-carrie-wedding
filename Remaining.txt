@@ -5,11 +5,11 @@ Prior to Going Live:
 * Hotel Block tbd
 * Scaling of header
 * Scaling of gallery
-Timeline content
+* Timeline content
 
 Information:
 	Travel Logistics
-	* Travel Information
+	* Hotel Block
 
 	Gallery:
 	* Pictures
@@ -22,34 +22,20 @@ Functionality:
 	* Determine how to keep information private
 
 	Travel Logistics:
-	* Hyperlinks to hotels and airports
+	* Hyperlinks to hotels
 
 	Everything Madison:
 	* Toggle Madison activities visibility
 
-	Gallery:
-	* Gallery sorting
-
-Refactoring:
-	* Optimize CSS
-
 Design:
-	Overall:
-	* Active tabs match header/body background
-	* Finalize header style
-	* Determine body style
-
 	Our Story:
 	* Design boxes with Milestones
-	* Place pictures on page
 
 	Everything Madison:
-	* Design intro section
 	* Refine table of activities
 
 	Gallery:
-	* Design how picture pop-out appears
-	* Design how thumbnails appear
+	* Refine Design
 
 Content:
 	Our Story: 

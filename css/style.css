@@ -89,7 +89,7 @@ h4 {
 	font-size:40px;
 }
 h1 small {
-	color: rgba(244, 255, 25, 0.8);
+	color: rgb(244, 255, 25);
 }
 
 h1, h2, h3, h4, p, small {
