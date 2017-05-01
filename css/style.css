@@ -1,4 +1,4 @@
-body, header {
+body, header, [id="gallery-slider"] {
 	padding-top: 50px; /* Aligns with navbar */
 }
 
