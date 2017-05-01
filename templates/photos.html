@@ -19,7 +19,7 @@
 		<div class="col-md-2">
 			<ul>
 				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
-					<img class="img-thumbnail" ng-src="{{photo.src}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" />
+					<a smooth ng-href="#gallery-slider"><img class="img-thumbnail" ng-src="{{photo.src}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" /></a>
 				</li>
 			</ul>
 		</div>
