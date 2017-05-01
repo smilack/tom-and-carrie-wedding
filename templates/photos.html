@@ -6,7 +6,7 @@
 <section id="gallery-slider" ng-controller= "GalleryController as galCtrl">
 	<div class="row">
 		<!--Active image display-->
-		<div class="col-xs-10 col-md-10">
+		<div class="col-xs-9 col-sm-10 col-md-10">
 			<div ng-repeat="photo in photos" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
 				<img class="img-responsive" ng-src="{{photo.src}}" />
 				<h2>{{photo.date}} - {{photo.location}}</h2>
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<!--Thumbnail column-->
-		<div class="col-xs-2 col-md-2">
+		<div class="col-xs-3 col-sm-2 col-md-2">
 			<ul>
 				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
 					<a smooth ng-href="#gallery-slider"><img class="img-thumbnail" ng-src="{{photo.src}}" alt="{{photo.description}}" title="{{photo.description}}" ng-click="showPhoto($index);" /></a>
