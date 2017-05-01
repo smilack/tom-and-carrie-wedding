@@ -26,7 +26,7 @@ var timelineData = {
       },
       {
          title: "Got Our Own Place",
-         description: "Affectionately dubbed the 'Crappy Dumphole Full of Spiders,' it boasted no A/C, a roving dishwasher, and many MANY spiders",
+         description: "Affectionately dubbed the 'Crappy Dumphole Full of Spiders,' it boasted a roving dishwasher and many spiders",
          date: new Date(2014, Months.AUG, 19),
          day: true,
          photo: ""
@@ -61,7 +61,7 @@ var timelineData = {
       },
       {
          title: "Road Trip",
-         description: "Tom and Carrie spent three weeks on the road between leases. We visited Chicago, Cleveland, Buffalo, Boston, Columbus, Des Moines, Kansas City, St. Louis, and Minneapolis",
+         description: "Tom and Carrie spent three weeks on the road between leases. We visited cities from Minneapolis to Boston",
          date: new Date(2014, Months.JUL, 31),
          day: true,
          photo: ""
@@ -82,7 +82,7 @@ var timelineData = {
       },
       {
          title: "Belgium",
-         description: "Tom, Carrie, and Tom's parents visited Tom's sister Mary in Antwerp. We traveled to Bruges, Brussels, Namur, and Ghent",
+         description: "Tom, Carrie, and Tom's parents visited Tom's sister Mary, traveling to Antwerp, Bruges, Brussels, Namur, and Ghent",
          date: new Date(2015, Months.JUL),
          day: false,
          photo: ""
