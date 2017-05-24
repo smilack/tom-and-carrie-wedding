@@ -5,28 +5,28 @@ var timelineData = {
    events: [
       {
          title: "Moved in Together",
-         description: "Tom and Carrie met when the moved in together with mutual friends",
+         description: "Tom and Carrie met when they moved in together with Hunter and Emily",
          date: new Date(2012, Months.AUG),
          day: false,
          photo: ""
       },
       {
          title: "Adult Swim",
-         description: "First hangout",
+         description: "We hung out for the first time at the Madison Children's Museum",
          date: new Date(2012, Months.SEP, 28),
          day: true,
          photo: ""
       },
       {
          title: "Freakfest",
-         description: "Also first hangout?",
+         description: "We dressed up for a Halloween party on State Street, after watching 'Masque of the Red Death'",
          date: new Date(2012, Months.OCT, 27),
          day: true,
          photo: ""
       },
       {
-         title: "Got own Place",
-         description: "Crappy Dumphole Full of Spiders",
+         title: "Got Our Own Place",
+         description: "Affectionately dubbed the 'Crappy Dumphole Full of Spiders,' it boasted a roving dishwasher and many spiders",
          date: new Date(2014, Months.AUG, 19),
          day: true,
          photo: ""
@@ -40,35 +40,35 @@ var timelineData = {
       },
       {
          title: "Engaged",
-         description: "Tom and Carrie got engaged at Heritage during restaurant week",
+         description: "We got engaged at Heritage during restaurant week",
          date: new Date(2015, Months.JAN),
          day: false,
          photo: ""
       },
       {
          title: "First Kiss",
-         description: "Best birthday present",
+         description: "Best birthday present :)",
          date: new Date(2013, Months.OCT, 15),
          day: true,
          photo: ""
       },
       {
          title: "First Thanksgiving Together",
-         description: "Drove down to Ohio",
-         date: new Date(2014, Months.NOV),
+         description: "We spent it in Ohio with Carrie's Aunt and Uncle",
+         date: new Date(2014, Months.NOV, 27),
          day: false,
          photo: ""
       },
       {
          title: "Road Trip",
-         description: "Tom and Carrie spent three weeks on the road when they were homeless",
+         description: "Tom and Carrie spent three weeks on the road between leases. We visited cities from Minneapolis to Boston",
          date: new Date(2014, Months.JUL, 31),
          day: true,
          photo: ""
       },
       {
          title: "ACL Reconstruction",
-         description: "Carrie's hamstring tendon was repurposed as an ACL",
+         description: "Carrie's hamstring tendon was repurposed as an ACL, and Tom was repurposed as a nurse",
          date: new Date(2014, Months.APR),
          day: false,
          photo: ""
@@ -82,15 +82,15 @@ var timelineData = {
       },
       {
          title: "Belgium",
-         description: "Tom and Carrie visit Tom's sister Mary in Antwerp",
+         description: "Tom, Carrie, and Tom's parents visited Tom's sister Mary, traveling to Antwerp, Bruges, Brussels, Namur, and Ghent",
          date: new Date(2015, Months.JUL),
          day: false,
          photo: ""
       },
       {
          title: "Wedding",
-         description: "The main event!",
-         date: new Date(2018, Months.JUN),
+         description: "We will get married June 2, 2018!",
+         date: new Date(2018, Months.JUN, 2),
          day: false,
          photo: ""
       },
@@ -100,6 +100,18 @@ var timelineData = {
          date: new Date(),
          day: true,
          photo: "",
+      },
+      {
+         title: "Moving Day",
+         description: "Tom and Carrie spent the day moving furniture, and had a late lunch on the rooftop garden of Brickhouse BBQ",
+         date: new Date(2013, Months.AUG, 4),
+         photo: ""
+      },
+      {
+         title: "Governor Dodge Boulder Bash",
+         description: "Tom takes Carrie rock climbing outside for the first time",
+         date: new Date(2015, Months.OCT, 3),
+         photo: ""
       }
    ]
 };

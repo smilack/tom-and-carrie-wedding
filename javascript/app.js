@@ -4,10 +4,10 @@
  var app = angular.module('app', ['ngAnimate', 'ngTouch']);
  
 //Application page directives
-  app.directive('homePage', function(){
+  app.directive('home', function(){
   	return {
   		restrict: 'E',
-  		templateUrl: 'templates/home-page.html'
+  		templateUrl: 'templates/home.html'
   	};
   });
   
@@ -26,17 +26,17 @@
 	};
  });
  
-  app.directive('travelLogistics', function(){
+  app.directive('hotelsAndTravel', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'templates/travel-logistics.html'
+ 		templateUrl: 'templates/hotels-and-travel.html'
 	};
  });
 
- app.directive('whyMadison', function(){
+ app.directive('thingsToDoInMadison', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'templates/why-madison.html'
+ 		templateUrl: 'templates/madison.html'
  	};
  });
  
@@ -47,10 +47,10 @@
  	};
  });
  
- app.directive('galleryPage', function(){
+ app.directive('photos', function(){
  	return {
  		restrict: 'E',
- 		templateUrl: 'templates/gallery-page.html'
+ 		templateUrl: 'templates/photos.html'
  	};
  });
 
