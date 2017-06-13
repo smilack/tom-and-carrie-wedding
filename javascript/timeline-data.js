@@ -46,9 +46,9 @@ var timelineData = {
          column: 1
       },
       {
-         title: "First Kiss",
-         description: "Best birthday present :)",
-         date: new Date(2013, Months.OCT, 15),
+         title: "Officially Started Dating",
+         description: "Yay!",
+         date: new Date(2013, Months.NOV, 1),
          day: true,
          column: 1
       },
