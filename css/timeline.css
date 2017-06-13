@@ -55,6 +55,22 @@
    font-weight: bold;
 }
 
+.date::after {
+   content: attr(data-abbr);
+   display: none;
+}
+
+@media screen and (max-width: 1199px) {
+   .date {
+      font-size: 0px;
+   }
+
+   .date::after {
+      display: block;
+      font-size: 20px;
+   }
+}
+
 .event {
    z-index: 1;
    max-width: 25.5%;
@@ -83,4 +99,12 @@
 
    .event .description {
       font-size: 16px;
+      background-color: rgba(255,255,255,0.9);
+      display: inline;
    }
+
+@media screen and (max-width: 990px) {
+   .event .description {
+      font-size: 14px;
+   }
+}

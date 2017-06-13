@@ -8,7 +8,7 @@
     <div id="timeline" style="height: {{ timeline.height }}px"></div>
     <div style="top: {{ event.position }}px;" class="line column{{ event.column }}" ng-repeat-start="event in timeline.events"></div>
     <div style="top: {{ event.position }}px" class="dot"></div>
-    <div style="top: {{ event.position }}px" class="date">{{ event.readableDate }}</div>
+    <div style="top: {{ event.position }}px" class="date" data-abbr="{{ event.abbreviatedDate }}">{{ event.readableDate }}</div>
     <div style="top: {{ event.position }}px" class="event column{{ event.column }}" ng-repeat-end>
       <div class="title">{{ event.title }}</div>
       <div class="description">{{ event.description }}</div>
