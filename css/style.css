@@ -44,8 +44,9 @@ nav {
 
 	.home header {
 		background-color: #FFFFFF;
-		padding: 20px;
-		margin-top: 160px;
+		padding: 1em;
+		margin-top: 15em;
+		margin-bottom:15em;
 	}
 
 	.home img {
@@ -54,11 +55,11 @@ nav {
 
 	.home h1 {
 		color: #1e5799;
-	    font-size: 75px;
+	    font-size: 4.5em;
 	}
 
 	.home h2, .home h3 {
-		font-size: 50px;
+		font-size: 3.5em;
 		color: rgb(178, 18, 18);
 	}
 
@@ -71,22 +72,22 @@ header {
 h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
-	font-size: 75px;
+	font-size: 4em;
 	}
 
 h2, small {
 	font-family: 'Architects Daughter', cursive;
-	font-size:40px;
+	font-size:3em;
 }
 
 h3 {
 	font-family: 'Amatic SC', cursive;
-	font-size:40px;
+	font-size:3em;
 }
 
 h4 {
 	font-family: 'Archivo Black', sans-serif;
-	font-size:40px;
+	font-size:3em;
 }
 span {
 	color: rgb(255, 219, 0);
@@ -112,11 +113,11 @@ section {
 }
 
 .margin-top, .registry {
-	margin-top: 20px;
+	margin-top: 0.5em;
 }
 
 .margin-bottom, section {
-	margin-bottom: 20px;
+	margin-bottom: 0.5em;
 }
 
 .padding, section, .registry {
@@ -124,7 +125,7 @@ section {
 }
 
 .address {
-	font-size: 17.5px;
+	font-size: 1.05em;
 }
 	.address blockquote {
 		border-left: none;

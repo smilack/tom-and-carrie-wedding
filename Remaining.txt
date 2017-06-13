@@ -8,11 +8,14 @@ Prior to Going Live:
 * Timeline content
 
 Information:
+	Our Wedding:
+	* Pictures of Venue
+
 	Travel Logistics
 	* Hotel Block
 
 	Gallery:
-	* Pictures
+	* Engagement pictures
 
 Functionality:
 	Overall:
@@ -27,23 +30,7 @@ Functionality:
 	Everything Madison:
 	* Toggle Madison activities visibility
 
-Design:
-	Our Story:
-	* Design boxes with Milestones
-
-	Everything Madison:
-	* Refine table of activities
-
-	Gallery:
-	* Refine Design
-
 Content:
-	Our Story: 
-	* Relationship milestones
-
-	Gallery:
-	* Pictures
-
 	Everything Madison:
 	* Pictures of Madison
 	* Complete list of recommendations

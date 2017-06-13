@@ -29,6 +29,7 @@ function compareDates(eventA, eventB) {
 
 function parseEvent(event) {
    event.readableDate = readableDate(event.date, event.day);
+   event.abbreviatedDate = abbreviatedDate(event.date, event.day);
 
    var positionFraction = (event.date - this.firstDate) / this.dateDistance;
    event.position = Math.round(this.height * positionFraction);
@@ -47,6 +48,18 @@ function readableDate(date, day) {
    }
 
    string += " " + date.getFullYear();
+
+   return string;
+}
+
+function abbreviatedDate(date, day) {
+   var string = date.getMonth() + 1;
+
+   if(day) {
+      string += "/" + date.getDate();
+   }
+
+   string += "/" + date.getFullYear();
 
    return string;
 }
