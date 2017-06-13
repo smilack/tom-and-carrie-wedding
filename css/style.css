@@ -7,15 +7,17 @@ body {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 
+	background-image: #1e5799 url(/images/home-02.jpg) center center no-repeat;
+
 	/* Background Gradiant Code */
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,4494d6+9,7db9e8+100 */
-	background: #1e5799; /* Old browsers */
-	background: -moz-linear-gradient(top, #1e5799 0%, #207cca 0%, #4494d6 9%, #7db9e8 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*background: #1e5799;*/ /* Old browsers */
+	/*background: -moz-linear-gradient(top, #1e5799 0%, #207cca 0%, #4494d6 9%, #7db9e8 100%); *//* FF3.6-15 */
+	/*background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); *//* Chrome10-25,Safari5.1-6 */
+	/*background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	/*background-repeat: no-repeat;
+	background-attachment: fixed;*/
 }
 
 /* Navigation bar */
@@ -34,16 +36,18 @@ nav {
 
 /*Home Header */
 .home {
+	/*
 	background-image:
 	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
 	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
 	background-size: 110px 110px;
 	background-color: #1e5799;
-	background-position: 0 0, 55px 55px;
+	background-position: 0 0, 55px 55px;*/
+	background-image: #1e5799 url(/images/home-01.jpg) center center no-repeat;
 }
 
 	.home header {
-		background-color: #FFFFFF;
+		background-color: rgba(255, 255, 255, 0.25);
 		padding: 1em;
 		margin-top: 15em;
 		margin-bottom:15em;
