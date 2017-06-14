@@ -7,17 +7,20 @@ body {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 
-	/*Pattern*/
+	/*Pattern
 	background-image:
 	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
 	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
 	background-size: 110px 110px;
 	background-color: #1e5799;
-	background-position: 0 0, 55px 55px;
+	background-position: 0 0, 55px 55px;*/
 
-	/*Background image
-	background: #1e5799 url(/images/home-02.jpg) no-repeat fixed center bottom;
-	background-size: cover;*/
+	/*Background image */
+	background: url(/images/home-02.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Navigation bar */
@@ -34,34 +37,6 @@ nav {
 	border-bottom: medium solid rgb(178, 18, 18);
 }
 
-/*Home Header */
-.home {
-	/*Background image*/
-	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
-	background-size: 100% auto;
-}
-
-	.home header {
-		/*Floating box*/
-		background-color: rgba(255, 255, 255, 0.6);
-		padding: 1em;
-		margin-top: 10%;
-		margin-bottom:10%;
-	}
-/*
-	.home img {
-		padding: 0px;
-	}
-*/
-	.home h1 {
-		color: #1e5799;
-	    font-size: 4.5em;
-	}
-
-	.home h2, .home h3 {
-		font-size: 3.5em;
-		color: rgb(178, 18, 18);
-	}
 
 /*All header code */
 header {
@@ -96,6 +71,31 @@ span {
 h1, h2, h3, h4, p, small {
 	text-align: center;
 }
+
+
+/*Home Header */
+.home {
+	/*Background image*/
+	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
+	background-size: 100% auto;
+}
+
+	.home header {
+		/*Floating box*/
+		background-color: rgba(255, 255, 255, 0.6);
+		padding: 1em;
+		margin-top: 10%;
+		margin-bottom:10%;
+	}
+
+	.home h1 {
+		color: #1e5799;
+	}
+
+	.home h2, .home h3 {
+		font-size: 3em;
+		color: rgb(178, 18, 18);
+	}
 
 section {
 	/*Background gradiant for sections*/
