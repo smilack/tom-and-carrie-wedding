@@ -7,16 +7,8 @@ body {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 
-	/*Pattern
-	background-image:
-	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
-	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
-	background-size: 110px 110px;
-	background-color: #1e5799;
-	background-position: 0 0, 55px 55px;*/
-
 	/*Background image */
-	background: url(/images/home-02.jpg)no-repeat center center fixed;
+	background: url(/images/home-03.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -116,8 +108,12 @@ section {
 	margin-top: 0.5em;
 }
 
-.margin-bottom, section {
+.margin-bottom {
 	margin-bottom: 0.5em;
+}
+
+section {
+	margin-bottom: 15em;
 }
 
 .padding, section, .registry {
@@ -176,3 +172,11 @@ font-family: 'Raleway', sans-serif;
 
 	Yellow: rgb(244, 255, 25)
 */
+
+	/*Pattern
+	background-image:
+	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
+	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
+	background-size: 110px 110px;
+	background-color: #1e5799;
+	background-position: 0 0, 55px 55px;*/
