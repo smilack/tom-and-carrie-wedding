@@ -7,13 +7,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Archivo+Black|Francois+One|Quicksand|Raleway|Reenie+Beanie" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/timeline.css">
+		<!--Bootstrap.js-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 		<!--Angular CDN-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-touch.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.js"></script>
+		<!--UI Bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.4.0/ui-bootstrap-tpls.min.js"></script>
 		<!--Javascripts-->
 		<script type ="text/javascript" src="javascript/app.js"></script>
 		<!--Javascript Data-->
@@ -28,32 +29,33 @@
 	<body>
 		<div class="container-fluid">
 			<!--Site navigation bar -->
-			<nav class= "navbar navbar-fixed-top">
-
-				<ul class="nav nav-pills nav-justified">
-					<li>
-						<a smooth ng-href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
-					</li>
-					<li>
-						<a smooth ng-href="#story"><span class="glyphicon glyphicon-pencil"></span> Our Story</a>
-					</li>
-					<li>
-						<a smooth ng-href="#wedding"><span class="glyphicon glyphicon-heart"></span> Our Wedding</a>
-					</li>
-					<li>
-						<a smooth ng-href="#logistics"><span class="glyphicon glyphicon-plane"></span> Hotels and Travel</a>
-					</li>
-					<li>
-						<a smooth ng-href="#madison"><span class="glyphicon glyphicon-cutlery"></span> Things to Do in Madison</a>
-					</li>
-					<li>
-						<a smooth ng-href="#registries"><span class="glyphicon glyphicon-gift"></span> Our Registries</a>
-					</li>
-					<li>
-						<a smooth ng-href="#photos"><span class="glyphicon glyphicon-camera"></span> Photos</a>
-
-					</li>
-				</ul>
+			<nav class= "navbar navbar-default navbar-fixed-top" role="navigation">
+				<!-- Hyperlinks for navigation -->
+				<div>
+					<ul class="nav nav-pills nav-justified">
+						<li>
+							<a smooth ng-href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+						</li>
+						<li>
+							<a smooth ng-href="#story"><span class="glyphicon glyphicon-pencil"></span> Our Story</a>
+						</li>
+						<li>
+							<a smooth ng-href="#wedding"><span class="glyphicon glyphicon-heart"></span> Our Wedding</a>
+						</li>
+						<li>
+							<a smooth ng-href="#logistics"><span class="glyphicon glyphicon-plane"></span> Hotels and Travel</a>
+						</li>
+						<li>
+							<a smooth ng-href="#madison"><span class="glyphicon glyphicon-cutlery"></span> Things to Do in Madison</a>
+						</li>
+						<li>
+							<a smooth ng-href="#registries"><span class="glyphicon glyphicon-gift"></span> Our Registries</a>
+						</li>
+						<li>
+							<a smooth ng-href="#photos"><span class="glyphicon glyphicon-camera"></span> Photos</a>
+						</li>
+					</ul>
+				</div>	
 			</nav>
 			<home id="home"></home>
 		</div>

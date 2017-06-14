@@ -7,15 +7,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 
-	/* Background Gradiant Code */
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,4494d6+9,7db9e8+100 */
-	background: #1e5799; /* Old browsers */
-	background: -moz-linear-gradient(top, #1e5799 0%, #207cca 0%, #4494d6 9%, #7db9e8 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #1e5799 0%,#207cca 0%,#4494d6 9%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*Background image */
+	background: url(/images/home-03.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Navigation bar */
@@ -32,38 +29,8 @@ nav {
 	border-bottom: medium solid rgb(178, 18, 18);
 }
 
-/*Home Header */
-.home {
-	background-image:
-	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
-	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
-	background-size: 110px 110px;
-	background-color: #1e5799;
-	background-position: 0 0, 55px 55px;
-}
 
-	.home header {
-		background-color: #FFFFFF;
-		padding: 1em;
-		margin-top: 15em;
-		margin-bottom:15em;
-	}
-
-	.home img {
-		padding: 0px;
-	}
-
-	.home h1 {
-		color: #1e5799;
-	    font-size: 4.5em;
-	}
-
-	.home h2, .home h3 {
-		font-size: 3.5em;
-		color: rgb(178, 18, 18);
-	}
-
-/*All heading code */
+/*All header code */
 header {
 	color: White;
 }
@@ -97,6 +64,31 @@ h1, h2, h3, h4, p, small {
 	text-align: center;
 }
 
+
+/*Home Header */
+.home {
+	/*Background image*/
+	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
+	background-size: 100% auto;
+}
+
+	.home header {
+		/*Floating box*/
+		background-color: rgba(255, 255, 255, 0.6);
+		padding: 1em;
+		margin-top: 10%;
+		margin-bottom:10%;
+	}
+
+	.home h1 {
+		color: #1e5799;
+	}
+
+	.home h2, .home h3 {
+		font-size: 3em;
+		color: rgb(178, 18, 18);
+	}
+
 section {
 	/*Background gradiant for sections*/
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+62,fcfcfc+100 */
@@ -116,8 +108,12 @@ section {
 	margin-top: 0.5em;
 }
 
-.margin-bottom, section {
+.margin-bottom {
 	margin-bottom: 0.5em;
+}
+
+section {
+	margin-bottom: 15em;
 }
 
 .padding, section, .registry {
@@ -176,10 +172,11 @@ font-family: 'Raleway', sans-serif;
 
 	Yellow: rgb(244, 255, 25)
 */
-/* All colors
-background-image:
-radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #FFFFFF 95%, #FFFFFF 103%, #f4ff19 104%, #f4ff19 112%, #1e5799 113%, #1e5799 121%, #FFFFFF 122%, #FFFFFF 130%, #4494d6 131%, #4494d6 140%),
-radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #FFFFFF 95%, #FFFFFF 103%, #f4ff19 104%, #f4ff19 112%, #1e5799 113%, #1e5799 121%, #FFFFFF 122%, #FFFFFF 130%, #4494d6 131%, #4494d6 140%);
-background-size: 110px 110px;
-background-color: rgb(178, 18, 18);
-background-position: 0 0, 55px 55px; */
+
+	/*Pattern
+	background-image:
+	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%),
+	radial-gradient(closest-side, transparent 0%, transparent 75%, #207cca 76%, #207cca 85%, #7db9e8 86%, #7db9e8 94%, #4494d6 95%, #4494d6 103%, #207cca 104%, #207cca 112%, #1e5799 113%, #1e5799 121%, #7db9e8 122%, #7db9e8 130%, #4494d6 131%, #4494d6 140%);
+	background-size: 110px 110px;
+	background-color: #1e5799;
+	background-position: 0 0, 55px 55px;*/

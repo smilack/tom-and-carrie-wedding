@@ -1,7 +1,7 @@
 (function() {
 
  //Declare module for website application 
- var app = angular.module('app', ['ngAnimate', 'ngTouch']);
+ var app = angular.module('app', ['ngAnimate', 'ngTouch', 'ui.bootstrap']);
  
 //Application page directives
   app.directive('home', function(){
