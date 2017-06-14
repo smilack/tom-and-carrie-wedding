@@ -2,30 +2,6 @@
 
  //Declare module for website application 
  var app = angular.module('app', ['ngAnimate', 'ngTouch', 'ui.bootstrap']);
-
-//Controller manages Navigation bar collapse
-app.controller('NavigationController', function($scope) {
-    $scope.isCollapsed = true;
-  });
-
-/*
-
-    //Consider setting up an ng-class with a conditional statement for the nav-stacked
-
-    //Stack menu when collapsed
-    $('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
-    $('.nav-pills').addClass('nav-stacked');
-});
-
-    //Unstack menu when not collapsed
-    $('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
-    $('.nav-pills').removeClass('nav-stacked');
-}); 
-
-Reference: https://stackoverflow.com/questions/14741988/twitter-bootstrap-navbar-with-angularjs-collapse-not-functioning
-Original Fiddle for Bootstrap: http://jsfiddle.net/3e98f/
-
- */
  
 //Application page directives
   app.directive('home', function(){
