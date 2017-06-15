@@ -40,6 +40,9 @@ span {
 	color: rgb(255, 219, 0);
 }
 
+blockquote {
+	font-size: 1em;
+}
 /* Navigation bar */
 nav {
 }
