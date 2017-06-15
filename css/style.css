@@ -186,7 +186,7 @@ section {
 		border-left: none;
 	}
 
-/* Registry section */
+/*Registry*/
 .registry-row {
    display: flex;
    justify-content: space-between;
@@ -201,13 +201,13 @@ section {
    width: 100%;
 }
 
-/* Everything Madison */
+/*Everything Madison*/
 
 li {
 	list-style: none;
 }
 
-/*Gallery page */
+/*Gallery*/
 .img-thumbnail {
 	max-height: 140px;
 }
