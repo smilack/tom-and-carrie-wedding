@@ -45,18 +45,11 @@ nav {
    display: none;
 }
 
+/*Responsive sizing*/
 
 @media (max-width: 989px) {
-   body {
-      font-size: 32px;
-   }
-
    .btn-navbar {
       display: block;
-   }
-
-   .navbar-fixed-top {
-      left: unset;
    }
 
    .nav-collapse.collapsed {
