@@ -70,6 +70,7 @@ span {
    }
 
    .home {
+   	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
    	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -79,8 +80,8 @@ span {
 }
 
 @media (min-width: 990px) {
-
 	.home {
+		background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
 		background-size: 100% auto;
 		}
 	body {
@@ -126,11 +127,6 @@ header {
 }
 	
 /*Home Header */
-.home {
-	/*Background image*/
-	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
-}
-
 	.home header {
 		/*Floating box*/
 		background-color: rgba(255, 255, 255, 0.6);
