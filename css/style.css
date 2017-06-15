@@ -69,6 +69,13 @@ span {
       text-align: left;
    }
 
+   .home {
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+
 }
 
 @media (min-width: 990px) {
