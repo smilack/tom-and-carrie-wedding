@@ -8,76 +8,13 @@ body {
 	text-align: center;
 
 	/*Background image */
-	background: url(/images/home-03.jpg)no-repeat center center fixed;
+	background: url(/images/home-03.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-/* Navigation bar */
-nav {
-}
-	nav li {
-		display: inline-block;
-		margin: 10px;
-		font-family: 'Raleway', sans-serif;
-	}
-
-.navbar {
-	background-color: white;
-	border-bottom: medium solid rgb(178, 18, 18);
-}
-
-.icon-bar {
-  display: block;
-  width: 120px;
-  height: 12px;
-  background-color: #cccccc;
-  border-radius: 3px;
-  margin: 16px 0;
-}
-
-.btn-navbar {
-   float: right;
-   background-color: #ededed;
-   margin: 5px;
-   display: none;
-}
-
-/*Responsive sizing*/
-
-@media (max-width: 989px) {
-   .btn-navbar {
-      display: block;
-   }
-
-   .nav-collapse.collapsed {
-      display: none;
-   }
-
-   ul.nav {
-      clear: both;
-   }
-
-   ul.nav li {
-      width: unset;
-      display: block;
-      margin-left: 5px;
-      margin-right: 5px;
-   }
-
-   ul.nav > li > a {
-      text-align: left;
-   }
-
-}
-
-/*All header code */
-header {
-	color: White;
-}
-	
 /*Typography*/
 h1 {
 	font-family: 'Raleway', sans-serif;
@@ -103,16 +40,88 @@ span {
 	color: rgb(255, 219, 0);
 }
 
-h1, h2, h3, h4, p, small {
-	text-align: center;
+/*Responsive sizing*/
+@media (max-width: 989px) {
+	body {
+		font-size: 20px;
+	}
+
+   .btn-navbar {
+      display: block;
+   }
+
+   .nav-collapse.collapsed {
+      display: none;
+   }
+
+   ul.nav {
+      clear: both;
+   }
+
+   ul.nav li {
+      width: unset;
+      display: block;
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   ul.nav > li > a {
+      text-align: left;
+   }
+
+}
+
+@media (min-width: 990px) {
+
+	.home {
+		background-size: 100% auto;
+		}
+	body {
+		font-size:16px;
+	}
 }
 
 
+/* Navigation bar */
+nav {
+}
+	nav li {
+		display: inline-block;
+		margin: 10px;
+		font-family: 'Raleway', sans-serif;
+	}
+
+.navbar {
+	background-color: white;
+	border-bottom: medium solid rgb(178, 18, 18);
+}
+
+.icon-bar {
+  display: block;
+  width: 120px;
+  height: 12px;
+  background-color: rgb(125, 185, 232);
+  border-radius: 3px;
+  margin: 16px 0;
+}
+
+.btn-navbar {
+   float: right;
+   background-color: rgba(125, 185, 232, 0.25);
+   margin: 5px;
+   display: none;
+}
+
+
+/*All header code */
+header {
+	color: White;
+}
+	
 /*Home Header */
 .home {
 	/*Background image*/
 	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
-	background-size: 100% auto;
 }
 
 	.home header {
