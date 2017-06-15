@@ -29,6 +29,56 @@ nav {
 	border-bottom: medium solid rgb(178, 18, 18);
 }
 
+.icon-bar {
+  display: block;
+  width: 120px;
+  height: 12px;
+  background-color: #cccccc;
+  border-radius: 3px;
+  margin: 16px 0;
+}
+
+.btn-navbar {
+   float: right;
+   background-color: #ededed;
+   margin: 5px;
+   display: none;
+}
+
+
+@media (max-width: 989px) {
+   body {
+      font-size: 32px;
+   }
+
+   .btn-navbar {
+      display: block;
+   }
+
+   .navbar-fixed-top {
+      left: unset;
+   }
+
+   .nav-collapse.collapsed {
+      display: none;
+   }
+
+   ul.nav {
+      clear: both;
+   }
+
+   ul.nav li {
+      width: unset;
+      display: block;
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   ul.nav > li > a {
+      text-align: left;
+   }
+
+}
 
 /*All header code */
 header {

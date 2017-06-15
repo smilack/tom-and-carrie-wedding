@@ -1,7 +1,12 @@
 (function() {
 
  //Declare module for website application 
- var app = angular.module('app', ['ngAnimate', 'ngTouch', 'ui.bootstrap']);
+ var app = angular.module('app', []);
+
+ //Collapsible Menu
+ app.controller('NavBarCtrl', ['$scope', function($scope) {
+   $scope.isCollapsed = true;
+  }]);
  
 //Application page directives
   app.directive('home', function(){
