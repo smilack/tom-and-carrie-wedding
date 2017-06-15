@@ -40,56 +40,6 @@ span {
 	color: rgb(255, 219, 0);
 }
 
-/*Responsive sizing*/
-@media (max-width: 989px) {
-	body {
-		font-size: 20px;
-	}
-
-   .btn-navbar {
-      display: block;
-   }
-
-   .nav-collapse.collapsed {
-      display: none;
-   }
-
-   ul.nav {
-      clear: both;
-   }
-
-   ul.nav li {
-      width: unset;
-      display: block;
-      margin-left: 5px;
-      margin-right: 5px;
-   }
-
-   ul.nav > li > a {
-      text-align: left;
-   }
-
-   .home {
-   	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
-   	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-   }
-
-}
-
-@media (min-width: 990px) {
-	.home {
-		background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
-		background-size: 100% auto;
-		}
-	body {
-		font-size:16px;
-	}
-}
-
-
 /* Navigation bar */
 nav {
 }
@@ -207,6 +157,57 @@ li {
 .img-thumbnail {
 	max-height: 140px;
 }
+
+/*Responsive sizing*/
+@media (max-width: 989px) {
+	body {
+		font-size: 20px;
+	}
+
+   .btn-navbar {
+      display: block;
+   }
+
+   .nav-collapse.collapsed {
+      display: none;
+   }
+
+   ul.nav {
+      clear: both;
+   }
+
+   ul.nav li {
+      width: unset;
+      display: block;
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   ul.nav > li > a {
+      text-align: left;
+   }
+
+   .home {
+   	background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+
+}
+
+@media (min-width: 990px) {
+	.home {
+		background: #1e5799 url(/images/home-01.jpg) center center no-repeat;
+		background-size: 100% auto;
+		}
+	body {
+		font-size:16px;
+	}
+}
+
+
 
 /* font families:
 font-family: 'Amatic SC', cursive;
