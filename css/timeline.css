@@ -1,10 +1,14 @@
+#story section {
+   padding-top: 2em;
+}
+
 #timeline-container {
    position: relative;
 }
 
 #timeline {
    position: absolute;
-   left: 25%;
+   left: 22%;
    transform: translateX(-50%);
    width: 5px;
    background-color: black;
@@ -18,7 +22,7 @@
 .dot {
    width: 15px;
    height: 15px;
-   left: 25%;
+   left: 22%;
    transform: translate(-50%, -50%);
    border: 3px black solid;
    border-radius: 100%;
@@ -27,26 +31,65 @@
 
 .line {
    z-index: 0;
-   height: 3px;
-   left: 25%;
+   height: 2px;
+   left: 22%;
    background-color: black;
 }
 
+ .line.column1 {
+    width: 2%;
+ }
+ 
+ .line.column2 {
+    width: 27.5%;
+ }
+ 
+ .line.column3 {
+    width: 53.5%;
+ }
+
 .date {
-   right: 75%;
+   right: 80%;
    font-family: 'Architects Daughter', cursive;
    font-size: 20px;
    font-weight: bold;
-   padding: 1em;
+}
+
+.date::after {
+   content: attr(data-abbr);
+   display: none;
+}
+
+@media screen and (max-width: 1199px) {
+   .date {
+      font-size: 0px;
+   }
+
+   .date::after {
+      display: block;
+      font-size: 20px;
+   }
 }
 
 .event {
    z-index: 1;
-   max-width: 30%;
+   max-width: 25.5%;
    padding: 0 1em;
    transform: translateY(-17px);
-   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.8) 1em, rgba(255,255,255,0.8) calc(100% - 2em), rgba(255,255,255,0));
+   text-align: left;
 }
+
+ .event.column1 {
+    left: 23%;
+ }
+ 
+ .event.column2 {
+    left: 48.75%;
+ }
+ 
+ .event.column3 {
+    left: 74.5%;
+ }
 
    .event .title {
       font-weight: bold;
@@ -56,4 +99,14 @@
 
    .event .description {
       font-size: 16px;
+      background-color: rgba(255,255,255,0.9);
+      display: inline;
    }
+
+@media screen and (max-width: 990px) {
+   .event .description {
+      font-size: 14px;
+      display: none;
+   }
+
+}
