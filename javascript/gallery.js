@@ -15,12 +15,20 @@ angular.module('app')
 
 	// show prev image
 	$scope.showPrev = function () {
-		$scope._Index = ($scope._Index > 0) ? --$scope._Index : $scope.photos.length - 1;
+		if($scope._Index > 0) {
+			$scope._Index--;
+		} else {
+			$scope._Index = $scope.photos.length - 1;
+		}
 	};
 
 	// show next image
 	$scope.showNext = function () {
-		$scope._Index = ($scope._Index < $scope.photos.length - 1) ? ++$scope._Index : 0;
+		if($scope._Index < $scope.photos.length - 1) {
+			$scope._Index++;
+		} else {
+			$scope._Index = 0;
+		}
 	};
 
 	// show a certain image
