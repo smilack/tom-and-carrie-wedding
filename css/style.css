@@ -145,6 +145,20 @@ li {
 	list-style: none;
 }
 
+/* Hotels */
+ul.options {
+   text-align: left;
+}
+
+ul.options li {
+   list-style-type: disc;
+   margin-top: 0.5em;
+}
+
+ul.options li + li {
+   margin-top: 1em;
+}
+
 /*Gallery*/
 .img-thumbnail {
 	max-height: 140px;
