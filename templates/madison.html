@@ -25,9 +25,12 @@
 			<ul>
 				<li ng-repeat="field in activity.items">
 					<div class="text-center">
-						<h3><a ng-href="{{field.link}}" target="_blank">{{field.name}}</a></h3>
+						<h3 ng-switch="field.link === undefined">
+                   <a ng-switch-when="false" ng-href="{{field.link}}" target="_blank">{{field.name}}</a>
+                   <strong ng-switch-when="true">{{field.name}}</strong>
+                  </h3>
 						<p>{{field.description}}</p>
-						<a ng-href={{field.map}} target="_blank">Map</a>
+						<a ng-if='field.map !== undefined' ng-href={{field.map}} target="_blank">Map</a>
 					</div>
 				</li><br/>
 			</ul>
